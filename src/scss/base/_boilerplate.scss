@@ -1,0 +1,28 @@
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}

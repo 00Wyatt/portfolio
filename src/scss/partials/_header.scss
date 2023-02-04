@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.header {
+  min-height: $header;
+
+  .container {
+    padding: 8px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(small) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+  .logo {
+    display: flex;
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 56px;
+
+    a {
+      color: $white;
+      font-size: $p-md;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.btn {
+  padding: 8px 16px;
+  font-size: $p-lg;
+  font-weight: 500;
+  line-height: 32px;
+  color: $white;
+  background: transparent;
+  border: 2px solid $primary-500-main;
+  border-radius: 4px;
+  transition: all 250ms ease;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary-500-main;
+  }
+}

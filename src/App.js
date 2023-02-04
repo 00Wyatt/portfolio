@@ -1,11 +1,13 @@
-import './App.css';
+import Header from "./partials/Header";
+import Hero from "./partials/Hero";
+import Portfolio from "./partials/portfolio/Portfolio";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Wyatt Channings</h1>
+      <Header />
+      <Hero />
+      <Portfolio />
     </div>
   );
 }
-
-export default App;
