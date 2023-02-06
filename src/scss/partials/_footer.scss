@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+.footer {
+  min-height: 328px;
+  display: flex;
+
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .content {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .scroll-up {
+    font-size: $p-md;
+    line-height: 24px;
+    font-weight: 500;
+
+    @include breakpoint(small) {
+      line-height: 32px;
+    }
+  }
+
+  .divider {
+    position: relative;
+    flex-direction: column;
+    gap: 32px;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: $primary-secondary;
+    }
+  }
+
+  .copyright {
+    order: 1;
+    font-size: $p-sm;
+    line-height: 16px;
+    text-align: center;
+
+    @include breakpoint(small) {
+      line-height: 24px;
+    }
+
+    @include breakpoint(medium) {
+      order: 0;
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 24px;
+  }
+}

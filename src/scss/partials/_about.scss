@@ -1,0 +1,101 @@
+@use '../abstracts' as *;
+
+.about {
+  .container {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include breakpoint(large) {
+      padding: 96px 0;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  .header {
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: $h-md;
+      line-height: 40px;
+
+      @include breakpoint(small) {
+        line-height: 48px;
+      }
+    }
+  }
+
+  .bio {
+    max-width: 672px;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p {
+      font-size: $p-md;
+      line-height: 24px;
+
+      @include breakpoint(small) {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .skills {
+    max-width: 672px;
+    width: 100%;
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    @include breakpoint(small) {
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+
+    @include breakpoint(xlarge) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill {
+      max-width: 144px;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @include breakpoint(small) {
+        flex-direction: column;
+      }
+    }
+
+    .image {
+      background: $primary-800;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+
+      @include breakpoint(small) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .name {
+      font-size: $p-lg;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+}

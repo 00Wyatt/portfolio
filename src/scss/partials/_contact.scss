@@ -1,0 +1,90 @@
+@use '../abstracts' as *;
+
+.contact {
+  .container {
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(large) {
+      padding: 96px 0;
+    }
+
+    .content {
+      max-width: 536px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      flex-grow: 1;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+
+      h2 {
+        font-size: $h-md;
+        line-height: 40px;
+
+        @include breakpoint(small) {
+          line-height: 48px;
+        }
+      }
+
+      p {
+        font-size: $p-lg;
+        line-height: 24px;
+
+        @include breakpoint(small) {
+          line-height: 32px;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: $p-md;
+        line-height: 24px;
+
+        @include breakpoint(small) {
+          gap: 8px;
+        }
+
+        label {
+          font-weight: 700;
+        }
+
+        input,
+        textarea {
+          padding: 16px;
+          background: transparent;
+          border: 1px solid $neutral-200;
+          border-radius: 4px;
+          color: $white;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        textarea {
+          min-height: 216px;
+        }
+      }
+      .btn {
+        font-size: $p-md;
+        align-self: flex-start;
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ export default function BrickByBrick() {
           </div>
         </div>
         <div className="content">
-          <img className="image" src="#" alt="" />
+          <div className="image"></div>
         </div>
       </div>
     </div>

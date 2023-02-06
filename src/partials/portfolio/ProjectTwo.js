@@ -3,7 +3,7 @@ export default function ProjectTwo() {
     <div className="project">
       <div className="container">
         <div className="content reordered">
-          <img className="image" src="#" alt="" />
+          <div className="image"></div>
         </div>
         <div className="content">
           <div className="text-cta">
