@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 
 .hero {
+  position: relative;
+
   .container {
     min-height: calc(100vh - $header);
     display: flex;
@@ -91,6 +93,26 @@
 
     @include breakpoint(small) {
       justify-self: start;
+    }
+  }
+
+  .main-socials {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+    @include breakpoint(medium) {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3%;
+      left: unset;
+      bottom: unset;
+    }
+  }
+
+  .socials {
+    @include breakpoint(medium) {
+      flex-direction: column;
     }
   }
 }

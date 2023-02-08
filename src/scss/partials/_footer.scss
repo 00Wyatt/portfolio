@@ -20,6 +20,10 @@
   }
 
   .scroll-up {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $white;
     font-size: $p-md;
     line-height: 24px;
     font-weight: 500;
@@ -61,10 +65,5 @@
     @include breakpoint(medium) {
       order: 0;
     }
-  }
-
-  .socials {
-    display: flex;
-    gap: 24px;
   }
 }

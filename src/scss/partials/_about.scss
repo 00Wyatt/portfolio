@@ -41,11 +41,7 @@
 
     p {
       font-size: $p-md;
-      line-height: 24px;
-
-      @include breakpoint(small) {
-        line-height: 32px;
-      }
+      line-height: 32px;
     }
   }
 
@@ -66,6 +62,7 @@
 
     @include breakpoint(xlarge) {
       grid-template-columns: repeat(4, 1fr);
+      row-gap: 32px;
     }
 
     .skill {
@@ -81,15 +78,8 @@
     }
 
     .image {
-      background: $primary-800;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-
-      @include breakpoint(small) {
-        width: 48px;
-        height: 48px;
-      }
+      display: flex;
+      height: 48px;
     }
 
     .name {

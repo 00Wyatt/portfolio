@@ -18,3 +18,10 @@ body {
 .logo {
   display: flex;
 }
+.icon {
+  color: $white;
+}
+.socials {
+  display: flex;
+  gap: 24px;
+}

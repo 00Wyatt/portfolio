@@ -1,6 +1,7 @@
-export default function About() {
-  const skills = ["HTML", "CSS", "JavaScript", "React", "SCSS", "TailwindCSS", "Bootstrap5", "WordPress", "PHP", "MySQL", "Node.js", "MongoDB", "Git/GitHub", "Figma", "Photoshop"];
+import skills from "../components/Skills"
+import SVG from "../components/SVGs";
 
+export default function About() {
   return (
     <section id="about" className="about">
       <div className="container">
@@ -21,8 +22,10 @@ export default function About() {
           <div className="skill-grid">
             {skills.map(skill => (
               <div className="skill">
-                <div className="image"></div>
-                <p className="name">{skill}</p>
+                <div className="image">
+                  <SVG type={skill.logo || skill.name} width={'40'} />
+                </div>
+                <p className="name">{skill.name}</p>
               </div>
             ))}
           </div>
