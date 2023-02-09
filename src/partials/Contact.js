@@ -1,8 +1,20 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
+  const variants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
+    hidden: { opacity: 0, y: 50 }
+  }
+
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <div className="content">
+        <motion.div className="content"
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           <div className="header">
             <h2>Get in touch.</h2>
             <p>Have a question or want to work together?</p>
@@ -22,7 +34,7 @@ export default function Contact() {
             </div>
             <button className="btn" type="submit">Send Message</button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

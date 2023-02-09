@@ -5,6 +5,22 @@ body {
   color: $white;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary-800;
+  // background: $primary-secondary;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-600;
+}
+
 .container {
   margin: 0 24px;
 

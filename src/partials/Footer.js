@@ -1,9 +1,20 @@
 import SVG from "../components/SVGs";
+import { motion } from "framer-motion";
 
 export default function Footer() {
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 1, delay: 0.4 } },
+    hidden: { opacity: 0 }
+  }
+
   return (
     <header className="footer">
-      <div className="container">
+      <motion.div className="container"
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+      >
         <div className="content">
           <a className="logo" href="/">
             <SVG type={'Logo'} />
@@ -33,7 +44,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </header>
   )
 }
