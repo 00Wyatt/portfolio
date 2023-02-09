@@ -1,0 +1,78 @@
+@use '../abstracts' as *;
+
+.other-projects {
+  .header {
+    .container {
+      min-height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: $h-md;
+      line-height: 40px;
+
+      @include breakpoint(small) {
+        line-height: 48px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .wrapper {
+      min-height: 296px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+
+      @include breakpoint(small) {
+        min-height: 360px;
+      }
+    }
+  }
+
+  .project {
+    padding: 24px 32px;
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .image {
+    display: inline-block;
+    background: $primary-800;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+
+    @include breakpoint(small) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .text {
+    max-width: 216px;
+    display: grid;
+    gap: 8px;
+    text-align: center;
+    line-height: 24px;
+
+    @include breakpoint(small) {
+      line-height: 32px;
+    }
+
+    h3 {
+      font-size: $h-xs;
+    }
+
+    p {
+      font-size: $p-md;
+    }
+  }
+}

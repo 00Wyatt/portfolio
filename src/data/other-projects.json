@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "To-do List",
+    "description": "A to-do list app created with Meteor, React, and TailwindCSS."
+  },
+  {
+    "id": 2,
+    "title": "Example Project",
+    "description": "A weather app using React and OpenWeather API."
+  },
+  {
+    "id": 3,
+    "title": "Example Project",
+    "description": "A blog website using Wordpress, HTML and CSS."
+  }
+]

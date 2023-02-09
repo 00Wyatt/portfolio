@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Brick-by-Brick",
+    "description": "A protoyype for a website designed for LEGO collectors to catalogue and share their collections with the world. Built with HTML, SCSS, and JavaScript."
+  },
+  {
+    "id": 2,
+    "title": "Example Project",
+    "description": "A responsive landing page for a marketing campaign using HTML, CSS, and JavaScript. Utilized CSS Flexbox and Media Queries to ensure optimal display on all devices."
+  },
+  {
+    "id": 3,
+    "title": "Example Project",
+    "description": "A fully-functional e-commerce website using React and Node.js. Implemented features such as user authentication, product management, and a shopping cart system."
+  }
+]

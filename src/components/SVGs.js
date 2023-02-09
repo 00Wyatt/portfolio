@@ -3,6 +3,7 @@ import { ReactComponent as LinkedIn } from "../assets/SVGs/linkedin.svg";
 import { ReactComponent as GitHub } from "../assets/SVGs/github.svg";
 import { ReactComponent as Instagram } from "../assets/SVGs/instagram.svg";
 import { ReactComponent as UpArrow } from "../assets/SVGs/arrow-up-circle.svg";
+import { ReactComponent as DownArrow } from "../assets/SVGs/arrow-down-circle.svg";
 import { ReactComponent as HTML } from "../assets/SVGs/html.svg";
 import { ReactComponent as CSS } from "../assets/SVGs/css.svg";
 import { ReactComponent as JavaScript } from "../assets/SVGs/javascript.svg";
@@ -27,6 +28,7 @@ const SVGs = {
   GitHub,
   Instagram,
   UpArrow,
+  DownArrow,
   HTML,
   CSS,
   JavaScript,

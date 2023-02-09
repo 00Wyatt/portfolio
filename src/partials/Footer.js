@@ -8,7 +8,7 @@ export default function Footer() {
           <a className="logo" href="/">
             <SVG type={'Logo'} />
           </a>
-          <a className="scroll-up" href="#header">
+          <a className="scroll" href="#header">
             Back to top
             <SVG type={'UpArrow'} />
           </a>

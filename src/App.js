@@ -3,7 +3,8 @@ import Contact from "./partials/Contact";
 import Footer from "./partials/Footer";
 import Header from "./partials/Header";
 import Hero from "./partials/Hero";
-import Portfolio from "./partials/portfolio/Portfolio";
+import OtherProjects from "./partials/OtherProjects";
+import Portfolio from "./partials/Portfolio";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Hero />
       <Portfolio />
+      <OtherProjects />
       <About />
       <Contact />
       <Footer />

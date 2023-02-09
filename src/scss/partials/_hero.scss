@@ -96,12 +96,13 @@
     }
   }
 
-  .main-socials {
+  .socials {
     position: absolute;
     bottom: 5%;
     left: 5%;
 
     @include breakpoint(medium) {
+      flex-direction: column;
       top: 50%;
       transform: translateY(-50%);
       right: 3%;
@@ -110,9 +111,9 @@
     }
   }
 
-  .socials {
-    @include breakpoint(medium) {
-      flex-direction: column;
-    }
+  .scroll {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 }
