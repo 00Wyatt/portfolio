@@ -1,12 +1,8 @@
 import SVG from "../components/SVGs";
 import { motion } from "framer-motion";
+import variants from "../components/FramerVariants";
 
 export default function Hero() {
-  const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
-    hidden: { opacity: 0, y: 25 }
-  }
-
   return (
     <section className="hero">
       <ul className="socials">
@@ -32,10 +28,9 @@ export default function Hero() {
       </a>
       <div className="container">
         <motion.div className="content"
-          variants={variants}
+          variants={variants.heroFadeIn}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          animate="visible"
         >
           <div className="heading">
             <p>Hi, my name is</p>

@@ -1,16 +1,12 @@
 import SVG from "../components/SVGs";
 import { motion } from "framer-motion";
+import variants from "../components/FramerVariants";
 
 export default function Footer() {
-  const variants = {
-    visible: { opacity: 1, transition: { duration: 1, delay: 0.4 } },
-    hidden: { opacity: 0 }
-  }
-
   return (
     <header className="footer">
       <motion.div className="container"
-        variants={variants}
+        variants={variants.footerFadeIn}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}

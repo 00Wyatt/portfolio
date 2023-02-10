@@ -2,18 +2,14 @@ import about from "../data/about.json"
 import skills from "../data/skills.json"
 import SVG from "../components/SVGs";
 import { motion } from "framer-motion";
+import variants from "../components/FramerVariants";
 
 export default function About() {
-  const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
-    hidden: { opacity: 0, y: 50 }
-  }
-
   return (
     <section id="about" className="about">
       <div className="container">
         <motion.div className="bio"
-          variants={variants}
+          variants={variants.scrollFadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}>
@@ -29,7 +25,7 @@ export default function About() {
           </div>
         </motion.div>
         <motion.div className="skills"
-          variants={variants}
+          variants={variants.scrollFadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}

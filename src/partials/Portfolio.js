@@ -1,19 +1,15 @@
 import projects from "../data/portfolio.json";
 import { motion } from "framer-motion";
+import variants from "../components/FramerVariants";
 
 export default function Portfolio() {
-  const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
-    hidden: { opacity: 0, y: 50 }
-  }
-
   return (
     <section id="portfolio" className="portfolio">
       {projects && projects.map(project => (
         <div className="project" key={project.id}>
           <div className="container">
             <motion.div className={project.id % 2 === 0 ? "content reverse" : "content"}
-              variants={variants}
+              variants={variants.scrollFadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
@@ -27,7 +23,7 @@ export default function Portfolio() {
               </div>
             </motion.div>
             <motion.div className="content"
-              variants={variants}
+              variants={variants.scrollFadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
