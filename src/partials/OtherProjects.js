@@ -4,12 +4,13 @@ import variants from "../components/FramerVariants";
 
 export default function OtherProjects() {
   return (
-    <motion.div className="other-projects"
+    <motion.section className="other-projects"
       variants={variants.scrollFadeIn}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
     >
+      <div className="color-blur blur-5"></div>
       <div className="header">
         <div className="container">
           <h2>Other Projects</h2>
@@ -28,6 +29,6 @@ export default function OtherProjects() {
           </div>
         ))}
       </div>
-    </motion.div>
+    </motion.section>
   )
 }

@@ -5,6 +5,7 @@ import variants from "../components/FramerVariants";
 export default function Hero() {
   return (
     <section className="hero">
+      <div className="color-blur blur-1"></div>
       <ul className="socials">
         <li>
           <a className="icon" href="https://www.linkedin.com/in/wyatt-channings/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">

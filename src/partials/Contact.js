@@ -4,6 +4,7 @@ import variants from "../components/FramerVariants";
 export default function Contact() {
   return (
     <section id="contact" className="contact">
+      <div className="color-blur blur-7"></div>
       <div className="container">
         <motion.div className="content"
           variants={variants.scrollFadeIn}

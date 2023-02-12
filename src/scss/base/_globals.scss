@@ -1,8 +1,49 @@
 @use '../abstracts' as *;
 
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+}
+
 body {
+  min-height: 100vh;
   background: $primary-900;
   color: $white;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+svg {
+  z-index: 100;
 }
 
 /* Scrollbar */
@@ -21,6 +62,11 @@ body {
   background: $primary-600;
 }
 
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
   margin: 0 24px;
 
@@ -30,49 +76,5 @@ body {
 
   @include breakpoint(xlarge) {
     margin: 0 96px;
-  }
-}
-
-.logo {
-  display: flex;
-}
-
-.btn {
-  padding: 8px 16px;
-  font-size: $p-lg;
-  font-weight: 500;
-  line-height: 32px;
-  color: $white;
-  background: transparent;
-  border: 2px solid $primary-500-main;
-  border-radius: 4px;
-  transition: all 250ms ease;
-
-  &:hover {
-    cursor: pointer;
-    background: $primary-500-main;
-  }
-}
-
-.icon {
-  color: $white;
-}
-
-.socials {
-  display: flex;
-  gap: 24px;
-}
-
-.scroll {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: $white;
-  font-size: $p-md;
-  line-height: 24px;
-  font-weight: 500;
-
-  @include breakpoint(small) {
-    line-height: 32px;
   }
 }

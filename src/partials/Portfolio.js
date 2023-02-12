@@ -7,6 +7,7 @@ export default function Portfolio() {
     <section id="portfolio" className="portfolio">
       {projects && projects.map(project => (
         <div className="project" key={project.id}>
+          <div className={"color-blur blur-" + (project.id + 1)}></div>
           <div className="container">
             <motion.div className={project.id % 2 === 0 ? "content reverse" : "content"}
               variants={variants.scrollFadeIn}

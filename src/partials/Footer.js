@@ -4,7 +4,8 @@ import variants from "../components/FramerVariants";
 
 export default function Footer() {
   return (
-    <header className="footer">
+    <footer className="footer">
+      <div className="color-blur blur-8"></div>
       <motion.div className="container"
         variants={variants.footerFadeIn}
         initial="hidden"
@@ -41,6 +42,6 @@ export default function Footer() {
           </ul>
         </div>
       </motion.div>
-    </header>
+    </footer>
   )
 }

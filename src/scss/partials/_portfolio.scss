@@ -2,6 +2,73 @@
 
 .portfolio {
   .project {
+    position: relative;
+    overflow: visible;
+
+    .blur-2 {
+      background-image: url('../../assets/color-blurs/color-blur-2.png');
+      top: -22%;
+      left: -18%;
+      scale: 1.9;
+
+      @include breakpoint(small) {
+        left: -35%;
+        scale: 1.6;
+      }
+
+      @include breakpoint(medium) {
+        scale: 1.4;
+      }
+
+      @include breakpoint(large) {
+        left: -40%;
+        scale: 1.2;
+      }
+    }
+
+    .blur-3 {
+      background-image: url('../../assets/color-blurs/color-blur-3.png');
+      top: -25%;
+      left: 10%;
+      scale: 1.9;
+
+      @include breakpoint(small) {
+        top: -28%;
+        scale: 1.6;
+      }
+
+      @include breakpoint(medium) {
+        scale: 1.4;
+      }
+
+      @include breakpoint(large) {
+        left: 28%;
+        scale: 1.1;
+      }
+    }
+
+    .blur-4 {
+      background-image: url('../../assets/color-blurs/color-blur-4.png');
+      top: -25%;
+      left: 0;
+      scale: 2.2;
+
+      @include breakpoint(small) {
+        top: -28%;
+        left: 5%;
+        scale: 1.6;
+      }
+
+      @include breakpoint(medium) {
+        scale: 1.4;
+      }
+
+      @include breakpoint(large) {
+        left: -16%;
+        scale: 1.1;
+      }
+    }
+
     .container {
       display: grid;
       grid-template-columns: 1fr;

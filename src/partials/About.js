@@ -7,6 +7,7 @@ import variants from "../components/FramerVariants";
 export default function About() {
   return (
     <section id="about" className="about">
+      <div className="color-blur blur-5"></div>
       <div className="container">
         <motion.div className="bio"
           variants={variants.scrollFadeIn}

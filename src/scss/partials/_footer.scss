@@ -3,6 +3,24 @@
 .footer {
   min-height: 328px;
   display: flex;
+  position: relative;
+  overflow: visible;
+
+  .blur-8 {
+    background-image: url('../../assets/color-blurs/color-blur-8.png');
+    top: -50%;
+    scale: 2.5;
+
+    @include breakpoint(small) {
+      scale: 2.3;
+      left: -33%;
+    }
+
+    @include breakpoint(medium) {
+      left: -33%;
+      scale: 1.6;
+    }
+  }
 
   .container {
     flex-grow: 1;

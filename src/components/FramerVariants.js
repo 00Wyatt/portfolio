@@ -5,7 +5,7 @@ const variants = {
   },
   scrollFadeIn: {
     visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
-    hidden: { opacity: 0, y: 50 }
+    hidden: { opacity: 0, y: 40 }
   },
   footerFadeIn: {
     visible: { opacity: 1, transition: { duration: 1, delay: 0.4 } },
