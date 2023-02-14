@@ -9,6 +9,7 @@
   .blur-8 {
     background-image: url('../../assets/color-blurs/color-blur-8.png');
     top: -50%;
+    // bottom: 0;
     scale: 2.5;
 
     @include breakpoint(small) {

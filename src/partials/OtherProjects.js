@@ -1,8 +1,11 @@
-import projects from "../data/other-projects.json"
 import { motion } from "framer-motion";
+import projects from "../data/other-projects.json"
+import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
 
 export default function OtherProjects() {
+  const shapes = ['block1', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2']
+
   return (
     <motion.section className="other-projects"
       variants={variants.scrollFadeIn}
@@ -10,7 +13,26 @@ export default function OtherProjects() {
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
     >
-      <div className="color-blur blur-5"></div>
+      {shapes && shapes.map(shape => {
+        let type = '';
+        if (shape[0] === 'b') {
+          type = 'Block'
+        } else if (shape[0] === 't') {
+          type = 'Triangle'
+        } else {
+          type = 'Semicircle'
+        }
+        return (
+          <motion.div className={"shape " + shape} key={shape}
+            variants={variants.colorFadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <SVG type={type} />
+          </motion.div>
+        )
+      })}
       <div className="header">
         <div className="container">
           <h2>Other Projects</h2>

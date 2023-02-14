@@ -10,6 +10,10 @@ const variants = {
   footerFadeIn: {
     visible: { opacity: 1, transition: { duration: 1, delay: 0.4 } },
     hidden: { opacity: 0 }
+  },
+  colorFadeIn: {
+    visible: { opacity: 1, transition: { duration: 1, delay: 0.8 } },
+    hidden: { opacity: 0 }
   }
 }
 

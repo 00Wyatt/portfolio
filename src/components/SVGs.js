@@ -20,6 +20,9 @@ import { ReactComponent as Python } from "../assets/SVGs/python.svg";
 import { ReactComponent as Git } from "../assets/SVGs/git.svg";
 import { ReactComponent as Figma } from "../assets/SVGs/figma.svg";
 import { ReactComponent as Photoshop } from "../assets/SVGs/photoshop.svg";
+import { ReactComponent as Block } from "../assets/SVGs/block.svg";
+import { ReactComponent as Triangle } from "../assets/SVGs/triangle.svg";
+import { ReactComponent as Semicircle } from "../assets/SVGs/semicircle.svg";
 
 
 const SVGs = {
@@ -45,6 +48,9 @@ const SVGs = {
   Git,
   Figma,
   Photoshop,
+  Block,
+  Triangle,
+  Semicircle,
 }
 
 export default function SVG(props) {

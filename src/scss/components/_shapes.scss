@@ -1,0 +1,422 @@
+@use '../abstracts' as *;
+
+.shape {
+  position: absolute;
+  mix-blend-mode: soft-light;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+@mixin move($name, $rotation, $direction) {
+  @keyframes #{$name} {
+    0% {
+      transform: rotate($rotation) translate#{$direction }(8px);
+    }
+    50% {
+      transform: rotate($rotation) translate#{$direction }(-8px);
+    }
+    100% {
+      transform: rotate($rotation) translate#{$direction }(8px);
+    }
+  }
+}
+
+.hero {
+  .block1 {
+    top: 5%;
+    left: 20%;
+    @include move(h-block1, 56deg, X);
+    animation: h-block1 5s infinite ease-in;
+  }
+
+  .block2 {
+    top: 70%;
+    left: 82%;
+    @include move(h-block2, 190deg, Y);
+    animation: h-block2 5s infinite ease-in;
+
+    @include breakpoint(medium) {
+      top: 54%;
+    }
+  }
+
+  .triangle1 {
+    top: 80%;
+    left: 7%;
+    @include move(h-triangle1, 4deg, Y);
+    animation: h-triangle1 5s infinite ease-in;
+
+    @include breakpoint(medium) {
+      top: 40%;
+    }
+  }
+
+  .triangle2 {
+    top: 73%;
+    left: 55%;
+    @include move(h-triangle2, 188deg, Y);
+    animation: h-triangle2 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+
+  .semicircle1 {
+    top: 20%;
+    left: 60%;
+    @include move(h-semicircle1, 131deg, Y);
+    animation: h-semicircle1 5s infinite ease-in;
+  }
+
+  .semicircle2 {
+    top: 90%;
+    left: 4%;
+    @include move(h-semicircle2, -38deg, Y);
+    animation: h-semicircle2 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+}
+
+.portfolio {
+  .block1 {
+    top: 2%;
+    left: 34%;
+    @include move(p-block1, 120deg, X);
+    animation: p-block1 5s infinite ease-in;
+  }
+
+  .block2 {
+    top: 15%;
+    left: 90%;
+    @include move(p-block2, 50deg, X);
+    animation: p-block2 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(xlarge) {
+      display: block;
+    }
+  }
+
+  .block3 {
+    top: 12%;
+    left: 70%;
+    @include move(p-block3, -130deg, X);
+    animation: p-block3 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 32%;
+      left: 42%;
+    }
+  }
+
+  .block4 {
+    top: 46%;
+    left: 84%;
+    @include move(p-block4, -110deg, X);
+    animation: p-block4 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 64%;
+    }
+  }
+
+  .block5 {
+    top: 70%;
+    left: 50%;
+    @include move(p-block5, 155deg, Y);
+    animation: p-block5 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(xxlarge) {
+      display: block;
+    }
+  }
+
+  .block6 {
+    top: 82%;
+    left: 10%;
+    @include move(p-block6, -75deg, X);
+    animation: p-block6 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 91%;
+      left: 22%;
+    }
+  }
+
+  .triangle1 {
+    top: 25%;
+    left: 2%;
+    @include move(p-triangle1, -30deg, Y);
+    animation: p-triangle1 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+
+  .triangle2 {
+    top: 35%;
+    left: 70%;
+    @include move(p-triangle2, 20deg, Y);
+    animation: p-triangle2 5s infinite ease-in;
+  }
+
+  .triangle3 {
+    top: 81%;
+    left: 66%;
+    @include move(p-triangle3, 175deg, Y);
+    animation: p-triangle3 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 92%;
+      left: 46%;
+    }
+  }
+
+  .semicircle1 {
+    top: 18%;
+    left: 50%;
+    @include move(p-semicircle1, 140deg, Y);
+    animation: p-semicircle1 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(xxlarge) {
+      display: block;
+    }
+  }
+
+  .semicircle2 {
+    top: 42%;
+    left: 4%;
+    @include move(p-semicircle2, -50deg, Y);
+    animation: p-semicircle2 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(xlarge) {
+      display: block;
+    }
+  }
+
+  .semicircle3 {
+    top: 49%;
+    left: 4%;
+    @include move(p-semicircle3, -30deg, Y);
+    animation: p-semicircle3 5s infinite ease-in;
+
+    @include breakpoint(xlarge) {
+      top: 55%;
+      left: 70%;
+    }
+  }
+
+  .semicircle4 {
+    top: 68%;
+    left: 12%;
+    @include move(p-semicircle4, 60deg, X);
+    animation: p-semicircle4 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 71%;
+    }
+  }
+}
+
+.other-projects {
+  .block1 {
+    top: 30%;
+    left: 90%;
+    @include move(o-block1, 146deg, Y);
+    animation: o-block1 5s infinite ease-in;
+  }
+
+  .triangle1 {
+    top: 19%;
+    left: 11%;
+    @include move(o-triangle1, 4deg, Y);
+    animation: o-triangle1 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 5%;
+    }
+  }
+
+  .triangle2 {
+    top: 98%;
+    left: 63%;
+    @include move(o-triangle2, 200deg, Y);
+    animation: o-triangle2 5s infinite ease-in;
+  }
+
+  .semicircle1 {
+    top: 2%;
+    left: 67%;
+    @include move(o-semicircle1, 119deg, X);
+    animation: o-semicircle1 5s infinite ease-in;
+  }
+
+  .semicircle2 {
+    top: 70%;
+    left: 8%;
+    @include move(o-semicircle2, -46deg, X);
+    animation: o-semicircle2 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 88%;
+      left: 6%;
+    }
+  }
+}
+
+.about {
+  .block1 {
+    top: 4%;
+    left: 8%;
+    @include move(a-block1, 76deg, X);
+    animation: a-block1 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      left: 38%;
+      @include move(a-block1, -116deg, X);
+    }
+  }
+
+  .block2 {
+    top: 55%;
+    left: 90%;
+    @include move(a-block2, 200deg, Y);
+    animation: a-block2 5s infinite ease-in;
+  }
+
+  .triangle1 {
+    top: 47%;
+    left: 4%;
+    @include move(a-triangle1, -15deg, Y);
+    animation: a-triangle1 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 38%;
+    }
+  }
+
+  .triangle2 {
+    top: 96%;
+    left: 75%;
+    @include move(a-triangle2, -138deg, Y);
+    animation: a-triangle2 5s infinite ease-in;
+  }
+
+  .semicircle1 {
+    top: 25%;
+    left: 71%;
+    @include move(a-semicircle1, 131deg, Y);
+    animation: a-semicircle1 5s infinite ease-in;
+  }
+
+  .semicircle2 {
+    top: 75%;
+    left: 50%;
+    @include move(a-semicircle2, -25deg, Y);
+    animation: a-semicircle2 5s infinite ease-in;
+  }
+}
+
+.contact {
+  .block1 {
+    top: 2%;
+    left: 10%;
+    @include move(c-block1, 46deg, X);
+    animation: c-block1 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      left: 30%;
+    }
+  }
+
+  .block2 {
+    top: 48%;
+    left: 92%;
+    @include move(c-block2, 156deg, Y);
+    animation: c-block2 5s infinite ease-in;
+  }
+
+  .block3 {
+    top: 59%;
+    left: 28%;
+    @include move(c-block3, -16deg, Y);
+    animation: c-block3 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(xxlarge) {
+      display: block;
+    }
+  }
+
+  .triangle1 {
+    top: 34%;
+    left: 4%;
+    @include move(c-triangle1, 15deg, Y);
+    animation: c-triangle1 5s infinite ease-in;
+  }
+
+  .triangle2 {
+    top: 96%;
+    left: 75%;
+    @include move(c-triangle2, -138deg, Y);
+    animation: h-triangle2 5s infinite ease-in;
+  }
+
+  .semicircle1 {
+    top: 22%;
+    left: 67%;
+    @include move(c-semicircle1, 131deg, Y);
+    animation: c-semicircle1 5s infinite ease-in;
+
+    @include breakpoint(large) {
+      top: 25%;
+    }
+  }
+
+  .semicircle2 {
+    top: 84%;
+    left: 6%;
+    @include move(h-semicircle2, 25deg, Y);
+    animation: h-semicircle2 5s infinite ease-in;
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  .block1 {
+    top: 20%;
+    left: 45%;
+    @include move(f-block1, 146deg, Y);
+    animation: f-block1 5s infinite ease-in;
+
+    @include breakpoint(medium) {
+      left: 25%;
+    }
+  }
+
+  .semicircle1 {
+    top: 84%;
+    left: 85%;
+    @include move(f-semicircle1, -102deg, X);
+    animation: f-semicircle1 5s infinite ease-in;
+
+    @include breakpoint(medium) {
+      left: 60%;
+    }
+  }
+}

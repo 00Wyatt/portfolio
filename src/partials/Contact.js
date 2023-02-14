@@ -1,10 +1,32 @@
 import { motion } from "framer-motion";
+import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
 
 export default function Contact() {
+  const shapes = ['block1', 'block2', 'block3', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2']
+
   return (
     <section id="contact" className="contact">
-      <div className="color-blur blur-7"></div>
+      {shapes && shapes.map(shape => {
+        let type = '';
+        if (shape[0] === 'b') {
+          type = 'Block'
+        } else if (shape[0] === 't') {
+          type = 'Triangle'
+        } else {
+          type = 'Semicircle'
+        }
+        return (
+          <motion.div className={"shape " + shape} key={shape}
+            variants={variants.colorFadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <SVG type={type} />
+          </motion.div>
+        )
+      })}
       <div className="container">
         <motion.div className="content"
           variants={variants.scrollFadeIn}

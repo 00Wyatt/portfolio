@@ -4,26 +4,6 @@
   position: relative;
   overflow: visible;
 
-  .blur-5 {
-    background-image: url('../../assets/color-blurs/color-blur-5.png');
-    top: 5%;
-    scale: 2.9;
-    transform: rotate(75deg);
-
-    @include breakpoint(small) {
-      top: 0;
-      left: 5%;
-      scale: 2.2;
-      transform: rotate(40deg);
-    }
-
-    @include breakpoint(large) {
-      top: -20%;
-      scale: 1.2;
-      transform: rotate(0);
-    }
-  }
-
   .header {
     .container {
       min-height: 240px;
@@ -43,8 +23,13 @@
   }
 
   .content {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+
+    @include breakpoint(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     .wrapper {
       min-height: 296px;

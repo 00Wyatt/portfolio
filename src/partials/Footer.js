@@ -1,11 +1,26 @@
-import SVG from "../components/SVGs";
 import { motion } from "framer-motion";
+import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="color-blur blur-8"></div>
+      <motion.div className="shape block1"
+        variants={variants.colorFadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <SVG type="Block" />
+      </motion.div>
+      <motion.div className="shape semicircle1"
+        variants={variants.colorFadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <SVG type="Semicircle" />
+      </motion.div>
       <motion.div className="container"
         variants={variants.footerFadeIn}
         initial="hidden"

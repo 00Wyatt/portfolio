@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import SVG from "./SVGs";
 import { motion } from "framer-motion";
+import SVG from "./SVGs";
 
 export default function SplashScreen({ setSplashScreen }) {
   useEffect(() => {

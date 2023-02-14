@@ -1,0 +1,101 @@
+@use '../abstracts' as *;
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: $black;
+}
+
+.logo {
+  display: flex;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: $p-lg;
+  font-weight: 500;
+  line-height: 32px;
+  color: $white;
+  background: transparent;
+  border: 2px solid $primary-500-main;
+  border-radius: 4px;
+  transition: all 250ms ease;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary-500-main;
+  }
+}
+
+// .spec {
+//   position: relative;
+//   cursor: pointer;
+//   border: none;
+//   padding: 8px 16px;
+//   border-radius: 4px;
+//   // outline: none;
+//   // background: linear-gradient(90deg, #ec37d0, #d92b2b, #ffaa0d, #ec37d0);
+//   background: linear-gradient(90deg, $primary-500-main, $tertiary-400-main, $primary-500-main);
+//   background-size: 400%;
+//   color: $white;
+//   font-size: $p-lg;
+//   font-weight: 500;
+//   line-height: 32px;
+//   justify-self: center;
+
+//   @include breakpoint(small) {
+//     justify-self: start;
+//   }
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     z-index: -1;
+//     // background: linear-gradient(90deg, #ec37d0, #d92b2b, #ffaa0d, #ec37d0);
+//     background: linear-gradient(90deg, $primary-500-main, $tertiary-400-main, $primary-500-main);
+//     background-size: 400%;
+//     border-radius: 4px;
+//     opacity: 0;
+//     transition: 0.5s;
+//   }
+
+//   &:hover {
+//     animation: animate 10s linear infinite;
+
+//     &::before {
+//       // filter: blur(25px);
+//       opacity: 0.8;
+//       animation: animate 10s linear infinite;
+//     }
+//   }
+// }
+
+.icon {
+  color: $white;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $white;
+  font-size: $p-md;
+  line-height: 24px;
+  font-weight: 500;
+
+  @include breakpoint(small) {
+    line-height: 32px;
+  }
+}
