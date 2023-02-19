@@ -18,7 +18,7 @@ export default function Hero() {
         }
         return (
           <motion.div className={"shape " + shape} key={shape}
-            variants={variants.colorFadeIn}
+            variants={variants.shapesFadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

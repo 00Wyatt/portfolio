@@ -18,7 +18,7 @@ export default function Contact() {
         }
         return (
           <motion.div className={"shape " + shape} key={shape}
-            variants={variants.colorFadeIn}
+            variants={variants.shapesFadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -29,7 +29,7 @@ export default function Contact() {
       })}
       <div className="container">
         <motion.div className="content"
-          variants={variants.scrollFadeIn}
+          variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}

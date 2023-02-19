@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <motion.div className="shape block1"
-        variants={variants.colorFadeIn}
+        variants={variants.shapesFadeIn}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -14,7 +14,7 @@ export default function Footer() {
         <SVG type="Block" />
       </motion.div>
       <motion.div className="shape semicircle1"
-        variants={variants.colorFadeIn}
+        variants={variants.shapesFadeIn}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

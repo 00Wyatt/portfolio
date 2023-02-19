@@ -19,7 +19,7 @@ export default function Portfolio() {
         }
         return (
           <motion.div className={"shape " + shape} key={shape}
-            variants={variants.colorFadeIn}
+            variants={variants.shapesFadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -32,7 +32,7 @@ export default function Portfolio() {
         <div className="project" key={project.id}>
           <div className="container">
             <motion.div className={project.id % 2 === 0 ? "content reverse" : "content"}
-              variants={variants.scrollFadeIn}
+              variants={variants.contentFadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
@@ -46,7 +46,7 @@ export default function Portfolio() {
               </div>
             </motion.div>
             <motion.div className="content"
-              variants={variants.scrollFadeIn}
+              variants={variants.contentFadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}

@@ -8,7 +8,7 @@ export default function OtherProjects() {
 
   return (
     <motion.section className="other-projects"
-      variants={variants.scrollFadeIn}
+      variants={variants.contentFadeIn}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
@@ -24,7 +24,7 @@ export default function OtherProjects() {
         }
         return (
           <motion.div className={"shape " + shape} key={shape}
-            variants={variants.colorFadeIn}
+            variants={variants.shapesFadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

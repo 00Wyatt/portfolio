@@ -20,7 +20,7 @@ export default function About() {
         }
         return (
           <motion.div className={"shape " + shape} key={shape}
-            variants={variants.colorFadeIn}
+            variants={variants.shapesFadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -31,7 +31,7 @@ export default function About() {
       })}
       <div className="container">
         <motion.div className="bio"
-          variants={variants.scrollFadeIn}
+          variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}>
@@ -47,7 +47,7 @@ export default function About() {
           </div>
         </motion.div>
         <motion.div className="skills"
-          variants={variants.scrollFadeIn}
+          variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}

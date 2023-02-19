@@ -23,6 +23,7 @@ import { ReactComponent as Photoshop } from "../assets/SVGs/photoshop.svg";
 import { ReactComponent as Block } from "../assets/SVGs/block.svg";
 import { ReactComponent as Triangle } from "../assets/SVGs/triangle.svg";
 import { ReactComponent as Semicircle } from "../assets/SVGs/semicircle.svg";
+import { ReactComponent as List } from "../assets/SVGs/list.svg";
 
 
 const SVGs = {
@@ -51,6 +52,7 @@ const SVGs = {
   Block,
   Triangle,
   Semicircle,
+  List,
 }
 
 export default function SVG(props) {
