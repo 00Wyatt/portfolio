@@ -25,15 +25,15 @@ export default function Footer() {
         variants={variants.footerFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, margin: "-100px" }}
       >
         <div className="content">
-          <a className="logo" href="/">
+          <a className="logo" href="/" aria-label="Logo">
             <SVG type={'Logo'} />
           </a>
           <a className="scroll" href="#header">
-            Back to top
-            <SVG type={'UpArrow'} />
+            <div>Back to top</div>
+            <SVG type="UpArrow" width="24" />
           </a>
         </div>
         <div className="content divider">

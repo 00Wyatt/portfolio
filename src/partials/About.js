@@ -34,7 +34,7 @@ export default function About() {
           variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}>
+          viewport={{ once: true, margin: "-100px" }}>
           <div className="header">
             <h2>A bit about me.</h2>
           </div>
@@ -50,7 +50,7 @@ export default function About() {
           variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "-100px" }}
         >
           <div className="header">
             <h2>Things I can do.</h2>

@@ -32,7 +32,7 @@ export default function Contact() {
           variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "-100px" }}
         >
           <div className="header">
             <h2>Get in touch.</h2>

@@ -2,30 +2,6 @@
 
 .about {
   position: relative;
-  overflow: visible;
-
-  .blur-5 {
-    background-image: url('../../assets/color-blurs/color-blur-6.png');
-    top: 30%;
-    scale: 3.5;
-    transform: rotate(70deg);
-
-    @include breakpoint(small) {
-      scale: 2.5;
-      transform: rotate(40deg);
-    }
-
-    @include breakpoint(large) {
-      top: 15%;
-      left: 18%;
-      scale: 1.6;
-      transform: rotate(0);
-    }
-
-    @include breakpoint(xlarge) {
-      scale: 1.4;
-    }
-  }
 
   .container {
     padding: 48px 0;

@@ -2,7 +2,6 @@
 
 .other-projects {
   position: relative;
-  overflow: visible;
 
   .header {
     .container {
@@ -23,8 +22,6 @@
   }
 
   .content {
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
 
     @include breakpoint(large) {

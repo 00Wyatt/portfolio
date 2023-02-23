@@ -4,9 +4,10 @@ import variants from "../components/FramerVariants";
 
 export default function Hero() {
   const shapes = ['block1', 'block2', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2']
+  // const { scrollYProgress } = useScroll();
 
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero" >
       {shapes && shapes.map(shape => {
         let type = '';
         if (shape[0] === 'b') {
@@ -27,7 +28,11 @@ export default function Hero() {
           </motion.div>
         )
       })}
-      <ul className="socials">
+      <motion.ul className="socials"
+        initial={{ opacity: 0, x: "35px", y: "-50%" }}
+        animate={{ opacity: 1, x: 0, y: "-50%" }}
+        transition={{ duration: 0.5, delay: 2.5 }}
+      >
         <li>
           <a className="icon" href="https://www.linkedin.com/in/wyatt-channings/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
             <SVG type={'LinkedIn'} />
@@ -43,12 +48,27 @@ export default function Hero() {
             <SVG type={'Instagram'} />
           </a>
         </li>
-      </ul>
-      <a className="scroll" href="#portfolio">
-        Scroll
-        <SVG type={'DownArrow'} />
-      </a>
-      <div className="container">
+      </motion.ul>
+      <motion.a className="scroll" href="#portfolio"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 3 }}
+      >
+        <div>Scroll</div>
+        <SVG type={'DownArrow'} width="24" />
+      </motion.a>
+      {/* <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+        <motion.circle
+          cx="50"
+          cy="50"
+          r="30"
+          pathLength="1"
+          className="indicator"
+          style={{ pathLength: scrollYProgress }}
+        />
+      </svg> */}
+      <div className="container" >
         <motion.div className="content"
           variants={variants.heroFadeIn}
           initial="hidden"

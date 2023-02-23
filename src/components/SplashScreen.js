@@ -11,14 +11,20 @@ export default function SplashScreen({ setSplashScreen }) {
   }, [setSplashScreen]);
 
   return (
-    <div className="splash-screen">
+    <motion.div className="splash-screen"
+    // key="splashScreen"
+    // initial={{ x: '100%' }}
+    // animate={{ x: 0 }}
+    // exit={{ x: '100%' }}
+    // transition={{ duration: 1 }}
+    >
       <motion.div className="logo"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <SVG type={'Logo'} />
+        <SVG type="Logo" />
       </motion.div>
-    </div>
+    </motion.div>
   );
 };

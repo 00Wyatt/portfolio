@@ -6,12 +6,12 @@
   },
   {
     "id": 2,
-    "title": "Example Project",
-    "description": "A weather app using React and OpenWeather API."
+    "title": "Pokemon App",
+    "description": "A Pokedex app built using React, TailwindCSS, and the Pokemon API."
   },
   {
     "id": 3,
-    "title": "Example Project",
-    "description": "A blog website using Wordpress, HTML and CSS."
+    "title": "Frontend Mentor",
+    "description": "Challenges for practice in creating webpages from pre-made designs."
   }
 ]

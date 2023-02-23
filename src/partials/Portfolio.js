@@ -35,7 +35,7 @@ export default function Portfolio() {
               variants={variants.contentFadeIn}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-100px" }}
             >
               <div className="text-cta">
                 <div className="text">
@@ -49,7 +49,7 @@ export default function Portfolio() {
               variants={variants.contentFadeIn}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-100px" }}
             >
               <div className="image"></div>
             </motion.div>

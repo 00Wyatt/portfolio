@@ -14,43 +14,43 @@ export default function DesignLayer() {
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-3"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-4"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-5"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-6"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-7"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
       <motion.div className="color-blur blur-8"
         variants={variants.colorFadeIn}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-200px" }}
+        viewport={{ once: true, margin: "-300px" }}
       ></motion.div>
     </div>
   )

@@ -77,11 +77,15 @@
     }
 
     .image {
-      background: $primary-800;
+      // background: $primary-800;
+      background-image: url('../../assets/images/brick-by-brick.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
       border-radius: 4px;
-      max-width: 680px;
       width: 100%;
-      height: 320px;
+      max-width: 680px;
+      // height: 320px;
 
       @include breakpoint(small) {
         height: 416px;

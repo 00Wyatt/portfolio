@@ -2,30 +2,6 @@
 
 .contact {
   position: relative;
-  overflow: visible;
-
-  .blur-7 {
-    background-image: url('../../assets/color-blurs/color-blur-7.png');
-    top: -10%;
-    scale: 2.8;
-
-    @include breakpoint(small) {
-      scale: 2.4;
-    }
-
-    @include breakpoint(medium) {
-      scale: 1.9;
-    }
-
-    @include breakpoint(large) {
-      top: 0;
-      scale: 1.7;
-    }
-
-    @include breakpoint(xlarge) {
-      scale: 1.5;
-    }
-  }
 
   .container {
     padding: 48px 0;

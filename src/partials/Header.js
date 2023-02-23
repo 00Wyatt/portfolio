@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import SVG from "../components/SVGs";
+import variants from "../components/FramerVariants";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -13,22 +14,34 @@ export default function Header() {
     <header id="header" className="header">
       <div className="container">
         <nav className="content">
-          <a className="logo" href="/">
+          <motion.a className="logo" href="/" aria-label="Logo"
+            variants={variants.headerFadeIn}
+            initial="hidden"
+            animate="visible"
+          >
             <SVG type={'Logo'} />
-          </a>
-          <ul className="links desktop">
+          </motion.a>
+          <motion.ul className="links desktop"
+            variants={variants.headerFadeIn}
+            initial="hidden"
+            animate="visible"
+          >
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div className={`hamburger ${isActive ? ' active' : ''}`} onClick={handleClick}>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
+          </motion.ul>
+          <motion.div className={`hamburger ${isActive ? ' active' : ''}`} onClick={handleClick}
+            variants={variants.headerFadeIn}
+            initial="hidden"
+            animate="visible"
+          >
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </motion.div>
           <AnimatePresence>
             {isActive && (
-              <motion.ul className={'links mobile'}
+              <motion.ul className="links mobile"
                 key="links"
                 initial={{ opacity: 0, x: '100%' }}
                 animate={{ opacity: 1, x: 0 }}
