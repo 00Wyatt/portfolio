@@ -8,8 +8,8 @@ const variants = {
     hidden: { opacity: 0, y: 20 }
   },
   contentFadeIn: {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.75 } },
-    hidden: { opacity: 0, y: 35 }
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.75 } },
+    hidden: { opacity: 0, y: 25 }
   },
   footerFadeIn: {
     visible: { opacity: 1, transition: { duration: 1, delay: 0.75 } },

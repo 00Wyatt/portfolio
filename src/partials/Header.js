@@ -18,6 +18,7 @@ export default function Header() {
             variants={variants.headerFadeIn}
             initial="hidden"
             animate="visible"
+            drag
           >
             <SVG type={'Logo'} />
           </motion.a>

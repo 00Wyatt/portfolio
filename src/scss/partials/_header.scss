@@ -76,6 +76,11 @@
       font-weight: 500;
       display: flex;
       align-items: center;
+
+      &:active {
+        opacity: 0.9;
+        transform: scale(0.975);
+      }
     }
   }
 

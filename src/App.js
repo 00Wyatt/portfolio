@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimatePresence } from 'framer-motion';
 
 import About from "./partials/About";
 import Contact from "./partials/Contact";
@@ -17,9 +16,7 @@ export default function App() {
   return (
     <div className="App">
       {splashScreen ? (
-        <AnimatePresence>
-          <SplashScreen setSplashScreen={setSplashScreen} />
-        </AnimatePresence>
+        <SplashScreen setSplashScreen={setSplashScreen} />
       ) : (
         <>
           <DesignLayer />
@@ -34,4 +31,4 @@ export default function App() {
       )}
     </div>
   );
-}
+};

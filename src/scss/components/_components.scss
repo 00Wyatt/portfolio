@@ -1,12 +1,30 @@
 @use '../abstracts' as *;
+@use 'sass:color';
 
 .splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: $black;
+  transition: all 2s;
+
+  &.exit {
+    top: -100vw;
+  }
+}
+
+.center-logo {
+  display: flex;
+  transform: scale(1.2);
+
+  div:first-of-type {
+    margin-right: -14px;
+  }
 }
 
 .logo {
@@ -14,68 +32,67 @@
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
   padding: 8px 16px;
   font-size: $p-lg;
   font-weight: 500;
   line-height: 32px;
-  color: $white;
-  background: transparent;
-  border: 2px solid $primary-500-main;
+  text-align: center;
+  border: none;
   border-radius: 4px;
-  transition: all 250ms ease;
+  color: $white;
+  background-color: transparent;
+  background-clip: padding-box;
+  transition: box-shadow 300ms, transform 150ms;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
-    background: $primary-500-main;
+    box-shadow: 0 1px 15px $primary-500-main;
+  }
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.975);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid transparent;
+    background-image: linear-gradient($primary-800, $primary-800), $primary-secondary;
+    background-clip: padding-box, border-box;
+    background-repeat: repeat-x;
+    background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
+    background-position: center;
+    border-radius: 4px;
+    z-index: -1;
+    transition: border-color 200ms;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50vmax;
+    border-radius: 50%;
+    background-image: $primary-secondary-darken;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 200ms ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
-
-// .spec {
-//   position: relative;
-//   cursor: pointer;
-//   border: none;
-//   padding: 8px 16px;
-//   border-radius: 4px;
-//   // outline: none;
-//   // background: linear-gradient(90deg, #ec37d0, #d92b2b, #ffaa0d, #ec37d0);
-//   background: linear-gradient(90deg, $primary-500-main, $tertiary-400-main, $primary-500-main);
-//   background-size: 400%;
-//   color: $white;
-//   font-size: $p-lg;
-//   font-weight: 500;
-//   line-height: 32px;
-//   justify-self: center;
-
-//   @include breakpoint(small) {
-//     justify-self: start;
-//   }
-
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: -1;
-//     // background: linear-gradient(90deg, #ec37d0, #d92b2b, #ffaa0d, #ec37d0);
-//     background: linear-gradient(90deg, $primary-500-main, $tertiary-400-main, $primary-500-main);
-//     background-size: 400%;
-//     border-radius: 4px;
-//     opacity: 0;
-//     transition: 0.5s;
-//   }
-
-//   &:hover {
-//     animation: animate 10s linear infinite;
-
-//     &::before {
-//       // filter: blur(25px);
-//       opacity: 0.8;
-//       animation: animate 10s linear infinite;
-//     }
-//   }
-// }
 
 .socials {
   display: flex;
@@ -108,8 +125,9 @@
     line-height: 32px;
   }
 
-  &:hover {
+  &:active {
     color: $neutral-100;
+    transform: scale(0.975);
   }
 
   div {

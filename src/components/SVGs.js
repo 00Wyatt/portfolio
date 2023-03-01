@@ -1,4 +1,6 @@
 import { ReactComponent as Logo } from "../assets/SVGs/logo.svg";
+import { ReactComponent as LogoW } from "../assets/SVGs/logo-w.svg";
+import { ReactComponent as LogoC } from "../assets/SVGs/logo-c.svg";
 import { ReactComponent as LinkedIn } from "../assets/SVGs/linkedin.svg";
 import { ReactComponent as GitHub } from "../assets/SVGs/github.svg";
 import { ReactComponent as Instagram } from "../assets/SVGs/instagram.svg";
@@ -28,6 +30,8 @@ import { ReactComponent as List } from "../assets/SVGs/list.svg";
 
 const SVGs = {
   Logo,
+  LogoW,
+  LogoC,
   LinkedIn,
   GitHub,
   Instagram,
