@@ -29,14 +29,14 @@ export default function SplashScreen({ setSplashScreen }) {
         <motion.div className="logo"
           initial={{ y: -45 }}
           animate={{ y: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1, delay: 0.75, ease: "easeOut" }}
         >
           <SVG type="LogoW" />
         </motion.div>
         <motion.div className="logo"
           initial={{ y: 45 }}
           animate={{ y: 2 }}
-          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1, delay: 0.75, ease: "easeOut" }}
         >
           <SVG type="LogoC" />
         </motion.div>

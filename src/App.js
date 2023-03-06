@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import About from "./partials/About";
 import Contact from "./partials/Contact";
@@ -12,10 +12,17 @@ import SplashScreen from "./components/SplashScreen";
 
 export default function App() {
   const [splashScreen, setSplashScreen] = useState(true);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      setLoading(false);
+    });
+  }, []);
 
   return (
     <motion.div className="App">
-      {splashScreen ? (
+      {loading || splashScreen ? (
         <SplashScreen setSplashScreen={setSplashScreen} />
       ) : (
         <>
