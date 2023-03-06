@@ -1,14 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
-
-  function handleClick() {
-    setIsActive(!isActive);
-  }
 
   return (
     <header id="header" className="header">
@@ -18,9 +14,10 @@ export default function Header() {
             variants={variants.headerFadeIn}
             initial="hidden"
             animate="visible"
+            dragSnapToOrigin={true}
             drag
           >
-            <SVG type={'Logo'} />
+            <SVG type="Logo" />
           </motion.a>
           <motion.ul className="links desktop"
             variants={variants.headerFadeIn}
@@ -31,7 +28,7 @@ export default function Header() {
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </motion.ul>
-          <motion.div className={`hamburger ${isActive ? ' active' : ''}`} onClick={handleClick}
+          <motion.div className={`hamburger ${isActive ? ' active' : ''}`} onClick={() => setIsActive(!isActive)}
             variants={variants.headerFadeIn}
             initial="hidden"
             animate="visible"

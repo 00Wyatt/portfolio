@@ -20,7 +20,7 @@ export default function SplashScreen({ setSplashScreen }) {
   }, [setSplashScreen]);
 
   return (
-    <div className={`splash-screen ${exitSplashScreen ? 'exit' : ''}`}>
+    <div className={`splash-screen ${exitSplashScreen ? "exit" : ""}`}>
       <motion.div className="center-logo"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -30,15 +30,17 @@ export default function SplashScreen({ setSplashScreen }) {
           initial={{ y: -45 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-        ><SVG type="LogoW" />
+        >
+          <SVG type="LogoW" />
         </motion.div>
         <motion.div className="logo"
           initial={{ y: 45 }}
           animate={{ y: 2 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-        ><SVG type="LogoC" />
+        >
+          <SVG type="LogoC" />
         </motion.div>
       </motion.div>
     </div>
-  );
-};
+  )
+}

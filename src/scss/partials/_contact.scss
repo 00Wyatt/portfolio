@@ -31,19 +31,19 @@
 
       h2 {
         font-size: $h-md;
-        line-height: 40px;
+        line-height: rem(40);
 
         @include breakpoint(small) {
-          line-height: 48px;
+          line-height: rem(48);
         }
       }
 
       p {
         font-size: $p-lg;
-        line-height: 24px;
+        line-height: rem(24);
 
         @include breakpoint(small) {
-          line-height: 32px;
+          line-height: rem(32);
         }
       }
     }
@@ -58,7 +58,7 @@
         flex-direction: column;
         gap: 4px;
         font-size: $p-md;
-        line-height: 24px;
+        line-height: rem(24);
 
         @include breakpoint(small) {
           gap: 8px;

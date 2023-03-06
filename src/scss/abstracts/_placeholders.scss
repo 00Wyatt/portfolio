@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+%underline {
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    background: $primary-secondary;
+    height: 2px;
+    transition: all 200ms ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

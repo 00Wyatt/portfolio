@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
-import projects from "../data/other-projects.json"
-import SVG from "../components/SVGs";
+import projects from "../data/other-projects.json";
 import variants from "../components/FramerVariants";
+import Shapes from "../components/Shapes";
+import toDoList from "../assets/images/to-do-list.png";
+import pokeball from "../assets/images/pokeball.png";
+import frontendMentor from "../assets/images/frontend-mentor.png";
+
+const shapesList = ['block1', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2'];
+const images = [toDoList, pokeball, frontendMentor];
 
 export default function OtherProjects() {
-  const shapes = ['block1', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2']
-
   return (
     <motion.section className="other-projects"
       variants={variants.contentFadeIn}
@@ -13,26 +17,7 @@ export default function OtherProjects() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      {shapes && shapes.map(shape => {
-        let type = '';
-        if (shape[0] === 'b') {
-          type = 'Block'
-        } else if (shape[0] === 't') {
-          type = 'Triangle'
-        } else {
-          type = 'Semicircle'
-        }
-        return (
-          <motion.div className={"shape " + shape} key={shape}
-            variants={variants.shapesFadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <SVG type={type} />
-          </motion.div>
-        )
-      })}
+      <Shapes shapesList={shapesList} />
       <div className="header">
         <div className="container">
           <h2>Other Projects</h2>
@@ -42,9 +27,18 @@ export default function OtherProjects() {
         {projects && projects.map(project => (
           <div className="wrapper" key={project.id}>
             <div className="project">
-              <div className="image"></div>
+              <div className="image-wrapper">
+                <a href={project.siteLink} target="_blank" rel="noopener noreferrer">
+                  <img src={images[project.imageId]} alt={project.imageAlt} />
+                  <div className="image-overlay"></div>
+                </a>
+              </div>
               <div className="text">
-                <h3>{project.title}</h3>
+                <h3>
+                  <a className="site-link" href={project.siteLink} target="_blank" rel="noopener noreferrer">
+                    {project.title}
+                  </a>
+                </h3>
                 <p>{project.description}</p>
               </div>
             </div>

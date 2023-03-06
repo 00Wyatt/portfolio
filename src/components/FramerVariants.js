@@ -1,27 +1,32 @@
 const variants = {
   headerFadeIn: {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
-    hidden: { opacity: 0, y: 20 }
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } }
   },
   heroFadeIn: {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 1.75 } },
-    hidden: { opacity: 0, y: 20 }
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 1.75 } }
   },
   contentFadeIn: {
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.75 } },
-    hidden: { opacity: 0, y: 25 }
+    hidden: { opacity: 0, y: 25 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.75 } }
   },
   footerFadeIn: {
-    visible: { opacity: 1, transition: { duration: 1, delay: 0.75 } },
-    hidden: { opacity: 0 }
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1, delay: 0.75 } }
   },
   colorFadeIn: {
-    visible: { opacity: 1, transition: { duration: 1, delay: 1 } },
-    hidden: { opacity: 0 }
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1, delay: 1 } }
   },
   shapesFadeIn: {
-    visible: { opacity: 0.7, transition: { duration: 1, delay: 1.25 } },
-    hidden: { opacity: 0 }
+    hidden: { opacity: 0 },
+    visible: { opacity: 0.7, transition: { duration: 1, delay: 1.25 } }
+  },
+  modalDropIn: {
+    hidden: { y: "-100vh", opacity: 0 },
+    visible: { y: "0", opacity: 1, transition: { type: "spring", damping: 20, stiffness: 275, } },
+    exit: { y: "100vh", opacity: 0, transition: { duration: 0.25 } }
   }
 }
 

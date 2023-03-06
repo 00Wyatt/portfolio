@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import { useState } from "react"
+import { motion } from "framer-motion"
 import About from "./partials/About";
 import Contact from "./partials/Contact";
 import Footer from "./partials/Footer";
@@ -14,7 +14,7 @@ export default function App() {
   const [splashScreen, setSplashScreen] = useState(true);
 
   return (
-    <div className="App">
+    <motion.div className="App">
       {splashScreen ? (
         <SplashScreen setSplashScreen={setSplashScreen} />
       ) : (
@@ -29,6 +29,6 @@ export default function App() {
           <Footer />
         </>
       )}
-    </div>
+    </motion.div>
   );
 };

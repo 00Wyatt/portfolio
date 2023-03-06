@@ -2,16 +2,28 @@
   {
     "id": 1,
     "title": "To-do List",
-    "description": "A to-do list app created with Meteor, React, and TailwindCSS."
+    "description": "A to-do list app created with Meteor, React, and TailwindCSS.",
+    "siteLink": "https://to-dolist.meteorapp.com/",
+    "gitHubLink": "https://github.com/00Wyatt/todos-app",
+    "imageId": 0,
+    "imageAlt": "Screenshot of To-do List main page."
   },
   {
     "id": 2,
     "title": "Pokemon App",
-    "description": "A Pokedex app built using React, TailwindCSS, and the Pokemon API."
+    "description": "A Pokedex app built using React, TailwindCSS, and the Pokemon API.",
+    "siteLink": "#",
+    "gitHubLink": "#",
+    "imageId": 1,
+    "imageAlt": "Pokemon web app logo."
   },
   {
     "id": 3,
     "title": "Frontend Mentor",
-    "description": "Challenges for practice in creating webpages from pre-made designs."
+    "description": "Challenges for practice in creating webpages from pre-made designs.",
+    "siteLink": "https://www.frontendmentor.io/profile/00Wyatt",
+    "gitHubLink": "https://github.com/00Wyatt",
+    "imageId": 2,
+    "imageAlt": "Screenshot of my Frontend Mentor profile."
   }
 ]

@@ -92,12 +92,12 @@
 
   .block2 {
     top: 15%;
-    left: 90%;
+    left: 94%;
     @include move(p-block2, 50deg, X);
     animation: p-block2 5s infinite ease-in;
     display: none;
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(xxlarge) {
       display: block;
     }
   }
@@ -162,10 +162,14 @@
   }
 
   .triangle2 {
-    top: 35%;
+    top: 32%;
     left: 70%;
     @include move(p-triangle2, 20deg, Y);
     animation: p-triangle2 5s infinite ease-in;
+
+    @include breakpoint(small) {
+      top: 35%;
+    }
   }
 
   .triangle3 {
@@ -199,7 +203,7 @@
     animation: p-semicircle2 5s infinite ease-in;
     display: none;
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(xxlarge) {
       display: block;
     }
   }
@@ -210,7 +214,7 @@
     @include move(p-semicircle3, -30deg, Y);
     animation: p-semicircle3 5s infinite ease-in;
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(large) {
       top: 55%;
       left: 70%;
     }

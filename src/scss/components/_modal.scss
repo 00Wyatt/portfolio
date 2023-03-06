@@ -1,0 +1,76 @@
+@use '../abstracts' as *;
+
+.screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  width: clamp(50%, 704px, 90%);
+  max-height: 75vh;
+  overflow: auto;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: $primary-900;
+  z-index: 11;
+
+  @include breakpoint(medium) {
+    padding: 32px 48px;
+  }
+
+  h3 {
+    font-size: $h-sm;
+    line-height: rem(32);
+
+    @include breakpoint(small) {
+      line-height: rem(40);
+    }
+  }
+
+  p {
+    width: 100%;
+    font-size: $p-md;
+    line-height: rem(32);
+  }
+
+  ul {
+    margin: 0 16px;
+  }
+
+  li {
+    font-size: $p-md;
+    line-height: rem(32);
+    list-style: disc;
+  }
+
+  .project-links {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      font-size: $p-md;
+      font-weight: 600;
+      line-height: rem(24);
+    }
+  }
+
+  .btn {
+    padding-bottom: 40px; // Magic number - Make close button display properly
+    max-height: 48px;
+  }
+}

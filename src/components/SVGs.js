@@ -26,6 +26,7 @@ import { ReactComponent as Block } from "../assets/SVGs/block.svg";
 import { ReactComponent as Triangle } from "../assets/SVGs/triangle.svg";
 import { ReactComponent as Semicircle } from "../assets/SVGs/semicircle.svg";
 import { ReactComponent as List } from "../assets/SVGs/list.svg";
+import { ReactComponent as XLg } from "../assets/SVGs/x-lg.svg";
 
 
 const SVGs = {
@@ -57,12 +58,13 @@ const SVGs = {
   Triangle,
   Semicircle,
   List,
+  XLg
 }
 
 export default function SVG(props) {
-  const SVGType = SVGs[props.type];
+  const SVGType = SVGs[props.type]
   if (props.width || props.height) {
-    return <SVGType width={props.width} height={props.height} />;
+    return <SVGType width={props.width} height={props.height} />
   }
   return <SVGType />
 }

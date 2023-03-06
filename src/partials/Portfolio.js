@@ -1,37 +1,32 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Modal from "../components/Modal";
 import projects from "../data/portfolio.json";
-import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
+import Shapes from "../components/Shapes";
+import brickByBrick from '../assets/images/brick-by-brick.png';
+import georgesGardenCenter from '../assets/images/georges-garden-center.png';
+import gradShow from '../assets/images/grad-show.png';
+
+const shapesList = ['block1', 'block2', 'block3', 'block4', 'block5', 'block6', 'triangle1', 'triangle2', 'triangle3', 'semicircle1', 'semicircle2', 'semicircle3', 'semicircle4'];
+const images = [brickByBrick, georgesGardenCenter, gradShow];
 
 export default function Portfolio() {
-  const shapes = ['block1', 'block2', 'block3', 'block4', 'block5', 'block6', 'triangle1', 'triangle2', 'triangle3', 'semicircle1', 'semicircle2', 'semicircle3', 'semicircle4']
+  const [modalOpen, setModalOpen] = useState(false)
+  const [modalData, setModalData] = useState({})
+
+  function handleClick(data) {
+    setModalData(data)
+    setModalOpen(!modalOpen)
+  }
 
   return (
     <section id="portfolio" className="portfolio">
-      {shapes && shapes.map(shape => {
-        let type = '';
-        if (shape[0] === 'b') {
-          type = 'Block'
-        } else if (shape[0] === 't') {
-          type = 'Triangle'
-        } else {
-          type = 'Semicircle'
-        }
-        return (
-          <motion.div className={"shape " + shape} key={shape}
-            variants={variants.shapesFadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <SVG type={type} />
-          </motion.div>
-        )
-      })}
+      <Shapes shapesList={shapesList} />
       {projects && projects.map(project => (
         <div className="project" key={project.id}>
           <div className="container">
-            <motion.div className={project.id % 2 === 0 ? "content reverse" : "content"}
+            <motion.div className={`content ${project.id % 2 === 0 ? "reverse" : ""}`}
               variants={variants.contentFadeIn}
               initial="hidden"
               whileInView="visible"
@@ -40,9 +35,11 @@ export default function Portfolio() {
               <div className="text-cta">
                 <div className="text">
                   <h2>{project.title}</h2>
-                  <p>{project.description}</p>
+                  <p>{project.blurb}</p>
                 </div>
-                <button className="btn">Learn More</button>
+                <button className="btn" onClick={() => handleClick(project)}>
+                  Learn More
+                </button>
               </div>
             </motion.div>
             <motion.div className="content"
@@ -51,11 +48,21 @@ export default function Portfolio() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
             >
-              <div className="image"></div>
+              <div className="image-wrapper" onClick={() => (handleClick(project))}>
+                <img src={images[project.imageId]} alt={project.imageAlt} />
+                <div className="image-overlay"></div>
+              </div>
             </motion.div>
           </div>
         </div>
       ))}
+      <AnimatePresence
+        initial={false}
+        mode="wait"
+        onExitComplete={() => null}
+      >
+        {modalOpen && <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} modalData={modalData} />}
+      </AnimatePresence>
     </section>
   )
 }

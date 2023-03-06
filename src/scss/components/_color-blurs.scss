@@ -28,14 +28,14 @@
   }
 
   @include breakpoint(large) {
-    left: -16%;
+    left: -17%;
     scale: 1.2;
   }
 }
 
 .blur-2 {
   background-image: url('../../assets/color-blurs/color-blur-2.png');
-  top: 9%;
+  top: 8%;
   left: -18%;
   scale: 1.9;
 
@@ -49,7 +49,7 @@
   }
 
   @include breakpoint(large) {
-    top: 14%;
+    top: 13%;
     left: -40%;
     scale: 1.2;
   }
@@ -57,12 +57,13 @@
 
 .blur-3 {
   background-image: url('../../assets/color-blurs/color-blur-3.png');
-  top: 20%;
+  top: 18%;
   left: 10%;
   scale: 1.9;
 
   @include breakpoint(small) {
     scale: 1.6;
+    top: 20%;
   }
 
   @include breakpoint(medium) {
@@ -78,12 +79,13 @@
 
 .blur-4 {
   background-image: url('../../assets/color-blurs/color-blur-4.png');
-  bottom: 56%;
+  bottom: 59%;
   left: 0;
   scale: 2.2;
 
   @include breakpoint(small) {
     scale: 1.6;
+    bottom: 56%;
   }
 
   @include breakpoint(medium) {
@@ -107,7 +109,7 @@
 
 .blur-5 {
   background-image: url('../../assets/color-blurs/color-blur-5.png');
-  bottom: 37%;
+  bottom: 42%;
   scale: 2.9;
   transform: rotate(75deg);
 
@@ -136,11 +138,12 @@
 
 .blur-6 {
   background-image: url('../../assets/color-blurs/color-blur-6.png');
-  bottom: 18.5%;
+  bottom: 20%;
   scale: 3.5;
   transform: rotate(70deg);
 
   @include breakpoint(small) {
+    bottom: 18.5%;
     scale: 2.5;
     transform: rotate(40deg);
   }

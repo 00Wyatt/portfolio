@@ -1,40 +1,26 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import about from "../data/about.json"
-import skills from "../data/skills.json"
+import about from "../data/about.json";
+import skills from "../data/skills.json";
 import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
+import Shapes from "../components/Shapes";
+
+const shapesList = ['block1', 'block2', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2'];
 
 export default function About() {
-  const shapes = ['block1', 'block2', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2']
+  const [snapOrigin, setSnapOrigin] = useState(false);
 
   return (
     <section id="about" className="about">
-      {shapes && shapes.map(shape => {
-        let type = '';
-        if (shape[0] === 'b') {
-          type = 'Block'
-        } else if (shape[0] === 't') {
-          type = 'Triangle'
-        } else {
-          type = 'Semicircle'
-        }
-        return (
-          <motion.div className={"shape " + shape} key={shape}
-            variants={variants.shapesFadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <SVG type={type} />
-          </motion.div>
-        )
-      })}
+      <Shapes shapesList={shapesList} />
       <div className="container">
         <motion.div className="bio"
           variants={variants.contentFadeIn}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}>
+          viewport={{ once: true, margin: "-100px" }}
+        >
           <div className="header">
             <h2>A bit about me.</h2>
           </div>
@@ -53,14 +39,19 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="header">
-            <h2>Things I can do.</h2>
+            <h2 onClick={() => setSnapOrigin(!snapOrigin)}>Things I can do.</h2>
           </div>
           <div className="skill-grid">
             {skills && skills.map(skill => (
               <div className="skill" key={skill.name}>
-                <div className="image">
+                <motion.div className="image"
+                  drag
+                  whileDrag={{ scale: 1.1 }}
+                  whileTap={{ scale: 1.1 }}
+                  dragSnapToOrigin={snapOrigin}
+                >
                   <SVG type={skill.logo || skill.name} width={'40'} />
-                </div>
+                </motion.div>
                 <p className="name">{skill.name}</p>
               </div>
             ))}

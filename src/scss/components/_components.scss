@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:color';
 
 .splash-screen {
   position: fixed;
@@ -14,7 +13,7 @@
   transition: all 2s;
 
   &.exit {
-    top: -100vw;
+    top: -200vh;
   }
 }
 
@@ -37,7 +36,7 @@
   padding: 8px 16px;
   font-size: $p-lg;
   font-weight: 500;
-  line-height: 32px;
+  line-height: rem(32);
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -81,7 +80,6 @@
     left: 50%;
     width: 100%;
     height: 50vmax;
-    border-radius: 50%;
     background-image: $primary-secondary-darken;
     transform-origin: center;
     transform: translate(-50%, -50%) scale(0);
@@ -117,12 +115,12 @@
   gap: 8px;
   color: $white;
   font-size: $p-md;
-  line-height: 24px;
+  line-height: rem(24);
   font-weight: 500;
   transition: all 200ms ease-in-out;
 
   @include breakpoint(small) {
-    line-height: 32px;
+    line-height: rem(32);
   }
 
   &:active {
@@ -139,5 +137,39 @@
   &:hover div {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+.site-link {
+  position: relative;
+  color: $white;
+  padding-bottom: 4px;
+  @extend %underline;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(212, 95%, 30%, 0.2);
+    box-shadow: 0 0 12px $primary-500-main;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+  }
+
+  &:hover .image-overlay {
+    opacity: 0;
   }
 }

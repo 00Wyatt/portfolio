@@ -2,24 +2,39 @@
 
 .portfolio {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+
+  @include breakpoint(large) {
+    gap: 24px;
+  }
 
   .project {
     .container {
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
-      gap: 48px;
+
+      @include breakpoint(small) {
+        gap: 24px;
+      }
 
       @include breakpoint(large) {
         grid-template-columns: 1fr 1fr;
+        gap: 48px;
       }
     }
 
     .content {
-      min-height: 440px;
+      min-height: 304px;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include breakpoint(small) {
+        min-height: 400px;
+      }
 
       @include breakpoint(large) {
         min-height: 600px;
@@ -51,19 +66,19 @@
 
       h2 {
         font-size: $h-lg;
-        line-height: 48px;
+        line-height: rem(48);
 
         @include breakpoint(small) {
-          line-height: 56px;
+          line-height: rem(56);
         }
       }
 
       p {
         font-size: $p-lg;
-        line-height: 24px;
+        line-height: rem(24);
 
         @include breakpoint(small) {
-          line-height: 32px;
+          line-height: rem(32);
         }
       }
     }
@@ -76,19 +91,11 @@
       }
     }
 
-    .image {
-      // background: $primary-800;
-      background-image: url('../../assets/images/brick-by-brick.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      border-radius: 4px;
-      width: 100%;
+    .image-wrapper {
       max-width: 680px;
-      // height: 320px;
 
-      @include breakpoint(small) {
-        height: 416px;
+      .overlay {
+        border-radius: 4px;
       }
     }
   }

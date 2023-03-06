@@ -48,19 +48,23 @@
     p {
       font-size: $h-sm;
       font-weight: 500;
-      line-height: 32px;
+      line-height: rem(32);
 
       @include breakpoint(small) {
-        line-height: 40px;
+        line-height: rem(40);
       }
     }
 
     h1 {
       font-size: $h-xl;
-      line-height: 56px;
+      line-height: rem(56);
 
       @include breakpoint(small) {
-        line-height: 80px;
+        line-height: rem(64);
+      }
+
+      @include breakpoint(medium) {
+        line-height: rem(80);
       }
     }
   }
@@ -76,10 +80,10 @@
     p {
       max-width: 568px;
       font-size: $p-lg;
-      line-height: 24px;
+      line-height: rem(24);
 
       @include breakpoint(small) {
-        line-height: 32px;
+        line-height: rem(32);
       }
 
       span {

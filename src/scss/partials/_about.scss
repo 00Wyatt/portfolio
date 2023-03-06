@@ -24,10 +24,10 @@
 
     h2 {
       font-size: $h-md;
-      line-height: 40px;
+      line-height: rem(40);
 
       @include breakpoint(small) {
-        line-height: 48px;
+        line-height: rem(48);
       }
     }
   }
@@ -43,13 +43,17 @@
 
     p {
       font-size: $p-md;
-      line-height: 32px;
+      line-height: rem(32);
     }
   }
 
   .skills {
     max-width: 672px;
     width: 100%;
+
+    h2 {
+      cursor: pointer;
+    }
   }
 
   .skill-grid {
@@ -82,11 +86,12 @@
     .image {
       display: flex;
       height: 48px;
+      z-index: 3;
     }
 
     .name {
       font-size: $p-lg;
-      line-height: 24px;
+      line-height: rem(24);
       font-weight: 700;
     }
   }
