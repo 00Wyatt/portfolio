@@ -9,7 +9,7 @@ import Shapes from "../components/Shapes";
 const shapesList = ['block1', 'block2', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2'];
 
 export default function About() {
-  const [snapOrigin, setSnapOrigin] = useState(false);
+  const [snapOrigin, setSnapOrigin] = useState(true);
 
   return (
     <section id="about" className="about">

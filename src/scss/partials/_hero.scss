@@ -15,12 +15,13 @@
   }
 
   .content {
-    margin-bottom: 2%;
+    margin-bottom: 12%;
     display: grid;
     gap: 8px;
     text-align: center;
 
     @include breakpoint(small) {
+      margin-bottom: 2%;
       text-align: left;
     }
 
@@ -46,12 +47,12 @@
     }
 
     p {
-      font-size: $h-sm;
+      font-size: $h-md;
       font-weight: 500;
-      line-height: rem(32);
+      line-height: rem(40);
 
       @include breakpoint(small) {
-        line-height: rem(40);
+        line-height: rem(44);
       }
     }
 
@@ -60,11 +61,15 @@
       line-height: rem(56);
 
       @include breakpoint(small) {
-        line-height: rem(64);
+        line-height: rem(68);
       }
 
-      @include breakpoint(medium) {
-        line-height: rem(80);
+      @include breakpoint(large) {
+        line-height: rem(76);
+      }
+
+      @include breakpoint(xlarge) {
+        line-height: rem(84);
       }
     }
   }
@@ -102,7 +107,7 @@
 
   .socials {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     left: 5%;
 
     @include breakpoint(medium) {
@@ -117,8 +122,9 @@
 
   .scroll {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     right: 5%;
+    transform: translateY(-50%);
   }
 
   // #progress {

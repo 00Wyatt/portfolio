@@ -36,7 +36,11 @@ button {
 }
 
 .container {
-  margin: 0 24px;
+  margin: 0 16px;
+
+  @include breakpoint(small) {
+    margin: 0 24px;
+  }
 
   @include breakpoint(medium) {
     margin: 0 48px;

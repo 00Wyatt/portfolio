@@ -40,7 +40,7 @@
   }
 
   .triangle1 {
-    top: 80%;
+    top: 77%;
     left: 7%;
     @include move(h-triangle1, 4deg, Y);
     animation: h-triangle1 5s infinite ease-in;

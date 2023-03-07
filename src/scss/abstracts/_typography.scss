@@ -8,5 +8,5 @@ $h-sm: clamp(1.6rem, calc(1.46rem + 0.7vw), 2rem); // 32.04px - 25.63px
 $h-md: clamp(2.03rem, calc(1.85rem + 0.88vw), 2.53rem); // 40.55px - 32.44px
 $h-lg: clamp(2.57rem, calc(2.34rem + 1.12vw), 3.21rem); // 51.32px - 41.05px
 
-// @link https://utopia.fyi/type/calculator?c=320,12,1.125,1240,18,1.2,8,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
-$h-xl: clamp(1.92rem, calc(0.91rem + 5.07vw), 4.84rem); // 77.40px - 30.79px
+// @link https://utopia.fyi/type/calculator?c=360,14,1.125,1240,19,1.2,8,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+$h-xl: clamp(2.25rem, calc(1.07rem + 5.2vw), 5.11rem); // 81.70px - 35.92px

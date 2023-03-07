@@ -18,11 +18,12 @@
 }
 
 .blur-1 {
-  background-image: url('../../assets/color-blurs/color-blur-1.png');
-  top: 0.5%;
+  background-image: url('../../assets/color-blurs/color-blur-1.svg');
+  top: 0.2%;
   scale: 2;
 
   @include breakpoint(small) {
+    top: 0.5%;
     left: -14%;
     scale: 1.6;
   }

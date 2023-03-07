@@ -9,7 +9,7 @@ const variants = {
   },
   contentFadeIn: {
     hidden: { opacity: 0, y: 25 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.75 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.5 } }
   },
   footerFadeIn: {
     hidden: { opacity: 0 },
