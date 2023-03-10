@@ -20,6 +20,11 @@
 .center-logo {
   display: flex;
   transform: scale(1.2);
+  margin-bottom: 10%;
+
+  @include breakpoint(large) {
+    margin: 0;
+  }
 
   div:first-of-type {
     margin-right: -14px;
