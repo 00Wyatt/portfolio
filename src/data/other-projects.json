@@ -12,8 +12,8 @@
     "id": 2,
     "title": "Pokemon App",
     "description": "A Pokedex app built using React, TailwindCSS, and the Pokemon API.",
-    "siteLink": "#",
-    "gitHubLink": "#",
+    "siteLink": "https://github.com/00Wyatt",
+    "gitHubLink": "https://github.com/00Wyatt",
     "imageId": 1,
     "imageAlt": "Pokemon web app logo."
   },
