@@ -19,7 +19,7 @@ export default function Contact() {
     event.preventDefault();
     console.log(inputs)
     axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.post('https://formsubmit.co/ajax/wyattchannings+site@gmail.com', {
+    axios.post('https://formsubmit.co/ajax/3c68556da94d174965e6408ddc34e238', {
       inputs
     })
       .then((response) => {
