@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import axios from 'axios';
+// import axios from 'axios';
 import variants from "../components/FramerVariants";
 import Shapes from "../components/Shapes";
 
@@ -18,18 +18,38 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs)
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.post('https://formsubmit.co/ajax/3c68556da94d174965e6408ddc34e238', {
-      inputs
+    fetch("https://formsubmit.co/ajax/wyattchannings+portfolio@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        inputs
+      })
     })
-      .then((response) => {
-        console.log(response);
-        alert("Message received. Thank you!");
+      .then(response => response.json())
+      .then((data) => {
+        console.log(data)
+        alert("Message received. Thank you!")
       })
       .catch((error) => {
-        console.error(error);
+        console.log(error)
         alert("Something went wrong while sending your message. Please try again later or contact me on LinkedIn or by email.");
       });
+
+    // axios.defaults.headers.post['Content-Type'] = 'application/json';
+    // axios.post('https://formsubmit.co/ajax/3c68556da94d174965e6408ddc34e238', {
+    //   inputs
+    // })
+    //   .then((response) => {
+    //     console.log(response);
+    //     alert("Message received. Thank you!");
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //     alert("Something went wrong while sending your message. Please try again later or contact me on LinkedIn or by email.");
+    //   });
     setInputs({})
   }
 
