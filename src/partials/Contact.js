@@ -8,6 +8,12 @@ const shapesList = ['block1', 'block2', 'block3', 'triangle1', 'triangle2', 'sem
 export default function Contact() {
   const [inputs, setInputs] = useState({});
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -18,13 +24,10 @@ export default function Contact() {
     event.preventDefault();
     console.log(inputs)
 
-    const contactForm = event.target;
-    const formData = new FormData(contactForm);
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({ "form-name": "contact", formData }).toString(),
+      body: encode({ "form-name": "contact", inputs })
     })
       .then((data) => {
         console.log(data)
