@@ -6,7 +6,9 @@ import Shapes from "../components/Shapes";
 const shapesList = ['block1', 'block2', 'block3', 'triangle1', 'triangle2', 'semicircle1', 'semicircle2'];
 
 export default function Contact() {
-  const [inputs, setInputs] = useState({});
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const encode = (data) => {
     return Object.keys(data)
@@ -14,20 +16,19 @@ export default function Contact() {
       .join("&");
   }
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({ ...values, [name]: value }))
-  }
-
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(inputs)
+    console.log(name, email, message)
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", inputs })
+      body: encode({
+        "form-name": "contact",
+        name: name,
+        email: email,
+        message: message
+      })
     })
       .then((data) => {
         console.log(data)
@@ -37,8 +38,9 @@ export default function Contact() {
         console.log(error)
         alert("Something went wrong while sending your message. Please try again later or contact me on LinkedIn or by email.");
       });
-
-    setInputs({})
+    setName("")
+    setEmail("")
+    setMessage("")
   }
 
   return (
@@ -58,18 +60,18 @@ export default function Contact() {
           <form onSubmit={handleSubmit}>
             <div className="field">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" value={inputs.name || ""}
-                onChange={handleChange} required />
+              <input type="text" id="name" name="name" value={name}
+                onChange={(e) => setName(e.target.value)} required />
             </div>
             <div className="field">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" value={inputs.email || ""}
-                onChange={handleChange} required />
+              <input type="email" id="email" name="email" value={email}
+                onChange={(e) => setEmail(e.target.value)} required />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" value={inputs.message || ""}
-                onChange={handleChange} required />
+              <textarea id="message" name="message" value={message}
+                onChange={(e) => setMessage(e.target.value)} required />
             </div>
             <button className="btn" type="submit">Send Message</button>
           </form>
