@@ -18,7 +18,6 @@ export default function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(name, email, message)
 
     fetch("/", {
       method: "POST",
@@ -38,6 +37,7 @@ export default function Contact() {
         console.log(error)
         alert("Something went wrong while sending your message. Please try again later or contact me on LinkedIn or by email.");
       });
+
     setName("")
     setEmail("")
     setMessage("")

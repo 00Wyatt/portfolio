@@ -24,17 +24,16 @@
   {
     "id": 2,
     "title": "George's Garden Center",
-    "blurb": "This project, completed at North Metropolitan TAFE, involved designing, prototyping and building a responsive website for a fictitious client using Figma and Bootstrap 5.",
+    "blurb": "This project, completed at North Metropolitan TAFE, involved designing, prototyping and building a responsive website for a fictional client using Figma, Bootstrap 5, and SCSS.",
     "description": [
-      "Currently still in development...",
       "This project involved the design and development of a responsive website for George's Garden Center, a fictional client, as part of my studies at North Metropolitan TAFE. The website aimed to showcase the client's services and products while providing an intuitive user experience.",
       "Using Figma and Bootstrap 5, I designed and prototyped the website to ensure a cohesive and user-friendly interface. I then developed the website to be fully responsive, allowing users to access the site from various devices.",
       "This project challenged me to think critically about the needs of the client and the end-users, while honing my design and development skills. I am proud to have delivered a high-quality website that meets the client's requirements and enhances their online presence."
     ],
     "imageId": 1,
     "imageAlt": "Screenshot of George's Garden Center homepage.",
-    "siteLink": "https://github.com/00Wyatt",
-    "repoLink": "https://github.com/00Wyatt"
+    "siteLink": "https://00wyatt.github.io/georges-garden-center/",
+    "repoLink": "https://github.com/00Wyatt/georges-garden-center"
   },
   {
     "id": 3,
@@ -48,7 +47,7 @@
     ],
     "imageId": 2,
     "imageAlt": "Screenshot of Grad Show Project homepage.",
-    "siteLink": "https://github.com/00Wyatt",
+    "siteLink": "https://www.figma.com/proto/9AX09rIixAuxoPzi3vL7V8/Grad-Show?node-id=46-184&scaling=min-zoom&page-id=42%3A2&starting-point-node-id=46%3A184&hide-ui=1",
     "repoLink": "https://github.com/00Wyatt"
   }
 ]
