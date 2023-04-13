@@ -77,4 +77,18 @@
       font-size: $p-md;
     }
   }
+
+  .icon-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include breakpoint(large) {
+      gap: 8px;
+    }
+
+    a > * {
+      transition: all 200ms ease-in-out;
+    }
+  }
 }

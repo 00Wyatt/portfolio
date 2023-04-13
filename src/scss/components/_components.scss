@@ -108,6 +108,7 @@
 
 .icon {
   color: $white;
+  display: flex;
 
   &:hover > * {
     transform: scale(1.1) translateY(-15%);

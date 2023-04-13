@@ -1,6 +1,35 @@
 [
   {
     "id": 1,
+    "title": "Grad Show Project",
+    "blurb": "This project is currently in development at North Metropolitan TAFE. A website built with WordPress, showcasing the work of graduating students in Semester 1 of 2023.",
+    "description": [
+      "As a member of a collaborative team, I am involved in designing and developing a WordPress website to showcase the work of graduating students from North Metropolitan TAFE in Semester 1 of 2023. The Grad Show website aims to provide a platform for students to showcase their work and connect with potential employers and industry professionals.",
+      "Using Figma, we are designing a visually appealing and user-friendly interface that highlights the students' diverse talents and skills. We are also utilizing WordPress to provide a flexible and scalable platform for managing and updating the website's content.",
+      "As a team, we are committed to delivering a high-quality website that effectively represents the graduating students and helps them launch their careers. I am excited to be a part of this project and contribute to the success of my peers.",
+      "Linked above is a prototype of my design for the site made in Figma, and the GitHub repo for my current version of the WordPress theme."
+    ],
+    "imageId": 0,
+    "imageAlt": "Screenshot of Grad Show Project homepage.",
+    "siteLink": "https://www.figma.com/proto/9AX09rIixAuxoPzi3vL7V8/Grad-Show?node-id=46-184&scaling=min-zoom&page-id=42%3A2&starting-point-node-id=46%3A184&hide-ui=1",
+    "repoLink": "https://github.com/00Wyatt/gradshow"
+  },
+  {
+    "id": 2,
+    "title": "George's Garden Center",
+    "blurb": "This project, completed at North Metropolitan TAFE, involved designing, prototyping and building a responsive website for a fictional client using Figma, Bootstrap 5, and SCSS.",
+    "description": [
+      "This project involved the design and development of a responsive website for George's Garden Center, a fictional client, as part of my studies at North Metropolitan TAFE. The website aimed to showcase the client's services and products while providing an intuitive user experience.",
+      "Using Figma and Bootstrap 5, I designed and prototyped the website to ensure a cohesive and user-friendly interface. I then developed the website to be fully responsive, allowing users to access the site from various devices.",
+      "This project challenged me to think critically about the needs of the client and the end-users, while honing my design and development skills. I am proud to have delivered a high-quality front end for a website that meets the client's requirements and enhances their online presence."
+    ],
+    "imageId": 1,
+    "imageAlt": "Screenshot of George's Garden Center homepage.",
+    "siteLink": "https://00wyatt.github.io/georges-garden-center/",
+    "repoLink": "https://github.com/00Wyatt/georges-garden-center"
+  },
+  {
+    "id": 3,
     "title": "Brick-by-Brick",
     "blurb": "A prototype for a website designed for LEGO collectors to catalogue and share their collections with the world. Designed in Figma, and built with HTML, SCSS, and JavaScript.",
     "description": [
@@ -16,38 +45,9 @@
       "Developing wireframes, mock-ups, and a prototype from an original design",
       "Leading and facilitating a team"
     ],
-    "imageId": 0,
+    "imageId": 2,
     "imageAlt": "Screenshot of Brick-by-Brick homepage.",
     "siteLink": "https://00wyatt.github.io/brick-by-brick-prototype/",
     "repoLink": "https://github.com/00Wyatt/brick-by-brick-prototype"
-  },
-  {
-    "id": 2,
-    "title": "George's Garden Center",
-    "blurb": "This project, completed at North Metropolitan TAFE, involved designing, prototyping and building a responsive website for a fictional client using Figma, Bootstrap 5, and SCSS.",
-    "description": [
-      "This project involved the design and development of a responsive website for George's Garden Center, a fictional client, as part of my studies at North Metropolitan TAFE. The website aimed to showcase the client's services and products while providing an intuitive user experience.",
-      "Using Figma and Bootstrap 5, I designed and prototyped the website to ensure a cohesive and user-friendly interface. I then developed the website to be fully responsive, allowing users to access the site from various devices.",
-      "This project challenged me to think critically about the needs of the client and the end-users, while honing my design and development skills. I am proud to have delivered a high-quality website that meets the client's requirements and enhances their online presence."
-    ],
-    "imageId": 1,
-    "imageAlt": "Screenshot of George's Garden Center homepage.",
-    "siteLink": "https://00wyatt.github.io/georges-garden-center/",
-    "repoLink": "https://github.com/00Wyatt/georges-garden-center"
-  },
-  {
-    "id": 3,
-    "title": "Grad Show Project",
-    "blurb": "A project currently in development at North Metropolitan TAFE. A website built with WordPress, showcasing the work of graduating students in Semester 1 of 2023.",
-    "description": [
-      "Currently still in development...",
-      "As a member of a collaborative team, I am involved in designing and developing a WordPress website to showcase the work of graduating students from North Metropolitan TAFE in Semester 1 of 2023. The Grad Show website aims to provide a platform for students to showcase their work and connect with potential employers and industry professionals.",
-      "Using Figma, we are designing a visually appealing and user-friendly interface that highlights the students' diverse talents and skills. We are also utilizing WordPress to provide a flexible and scalable platform for managing and updating the website's content.",
-      "As a team, we are committed to delivering a high-quality website that effectively represents the graduating students and helps them launch their careers. I am excited to be a part of this project and contribute to the success of my peers."
-    ],
-    "imageId": 2,
-    "imageAlt": "Screenshot of Grad Show Project homepage.",
-    "siteLink": "https://www.figma.com/proto/9AX09rIixAuxoPzi3vL7V8/Grad-Show?node-id=46-184&scaling=min-zoom&page-id=42%3A2&starting-point-node-id=46%3A184&hide-ui=1",
-    "repoLink": "https://github.com/00Wyatt"
   }
 ]

@@ -14,6 +14,7 @@
 }
 
 .modal {
+  position: relative;
   width: clamp(50%, 704px, 90%);
   max-height: 75vh;
   overflow: auto;
@@ -31,6 +32,26 @@
     padding: 32px 48px;
   }
 
+  .close-x {
+    display: none;
+    position: absolute;
+    right: 24px;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+
+    @include breakpoint(small) {
+      display: flex;
+    }
+
+    @include breakpoint(medium) {
+      right: 48px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   h3 {
     font-size: $h-sm;
     line-height: rem(32);
@@ -38,6 +59,26 @@
     @include breakpoint(small) {
       line-height: rem(40);
     }
+  }
+
+  .heading-wrapper {
+    position: relative;
+    padding: 0 8px 8px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $primary-secondary;
+    }
+  }
+
+  h4 {
+    align-self: start;
+    font-size: $h-xs;
   }
 
   p {
@@ -60,9 +101,13 @@
     margin-top: 16px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 
     a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: $p-md;
       font-weight: 600;
       line-height: rem(24);
@@ -70,7 +115,7 @@
   }
 
   .btn {
-    padding-bottom: 40px; // Magic number - Make close button display properly
+    padding-bottom: 40px; // Magic number - Make Close button display properly
     max-height: 48px;
   }
 }

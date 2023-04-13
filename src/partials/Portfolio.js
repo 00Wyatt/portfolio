@@ -4,12 +4,12 @@ import Modal from "../components/Modal";
 import projects from "../data/portfolio.json";
 import variants from "../components/FramerVariants";
 import Shapes from "../components/Shapes";
-import brickByBrick from '../assets/images/brick-by-brick.png';
-import georgesGardenCenter from '../assets/images/georges-garden-center.png';
 import gradShow from '../assets/images/grad-show.png';
+import georgesGardenCenter from '../assets/images/georges-garden-center.png';
+import brickByBrick from '../assets/images/brick-by-brick.png';
 
 const shapesList = ['block1', 'block2', 'block3', 'block4', 'block5', 'block6', 'triangle1', 'triangle2', 'triangle3', 'semicircle1', 'semicircle2', 'semicircle3', 'semicircle4'];
-const images = [brickByBrick, georgesGardenCenter, gradShow];
+const images = [gradShow, georgesGardenCenter, brickByBrick];
 
 export default function Portfolio() {
   const [modalOpen, setModalOpen] = useState(false)

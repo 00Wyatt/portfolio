@@ -27,6 +27,7 @@ import { ReactComponent as Triangle } from "../assets/SVGs/triangle.svg";
 import { ReactComponent as Semicircle } from "../assets/SVGs/semicircle.svg";
 import { ReactComponent as List } from "../assets/SVGs/list.svg";
 import { ReactComponent as XLg } from "../assets/SVGs/x-lg.svg";
+import { ReactComponent as BoxArrow } from "../assets/SVGs/box-arrow.svg";
 
 
 const SVGs = {
@@ -58,7 +59,8 @@ const SVGs = {
   Triangle,
   Semicircle,
   List,
-  XLg
+  XLg,
+  BoxArrow
 }
 
 export default function SVG(props) {

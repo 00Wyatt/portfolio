@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import projects from "../data/other-projects.json";
+import SVG from "../components/SVGs";
 import variants from "../components/FramerVariants";
 import Shapes from "../components/Shapes";
 import toDoList from "../assets/images/to-do-list.png";
@@ -40,6 +41,14 @@ export default function OtherProjects() {
                   </a>
                 </h3>
                 <p>{project.description}</p>
+                <div className="icon-links">
+                  <a className="icon" href={project.siteLink} target="_blank" rel="noopener noreferrer" aria-label="View Site" title="View Site">
+                    <SVG type="BoxArrow" />
+                  </a>
+                  <a className="icon" href={project.repoLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <SVG type="GitHub" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
