@@ -28,7 +28,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="content divider">
-          <p className="copyright">Designed and developed by Wyatt Channings © 2023</p>
+          <p className="copyright">Designed and developed by Wyatt Channings © 2024</p>
           <ul className="socials">
             <li>
               <a className="icon" href="https://www.linkedin.com/in/wyatt-channings/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
