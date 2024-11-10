@@ -1,52 +1,50 @@
 [
-  {
-    "id": 1,
-    "title": "Grad Show Project",
-    "blurb": "This project was developed at North Metropolitan TAFE. A website built with WordPress, SCSS, and JavaScript, showcasing the work of graduating students in Semester 1 of 2023.",
-    "description": [
-      "As a member of a collaborative team, I am involved in designing and developing a WordPress website to showcase the work of graduating students from North Metropolitan TAFE in Semester 1 of 2023. The Grad Show website aims to provide a platform for students to showcase their work and connect with potential employers and industry professionals.",
-      "Using Figma, we are designing a visually appealing and user-friendly interface that highlights the students' diverse talents and skills. We are also utilizing WordPress to provide a flexible and scalable platform for managing and updating the website's content.",
-      "As a team, we are committed to delivering a high-quality website that effectively represents the graduating students and helps them launch their careers. I am excited to be a part of this project and contribute to the success of my peers."
-    ],
-    "imageId": 0,
-    "imageAlt": "Screenshot of Grad Show Project homepage.",
-    "siteLink": "https://2023.gradshow.screencraft.net.au/",
-    "repoLink": "https://github.com/00Wyatt/gradshow"
-  },
-  {
-    "id": 2,
-    "title": "George's Garden Center",
-    "blurb": "This project, completed at North Metropolitan TAFE, involved designing, prototyping and building a responsive website for a fictional client using Figma, Bootstrap 5, and SCSS.",
-    "description": [
-      "This project involved the design and development of a responsive website for George's Garden Center, a fictional client, as part of my studies at North Metropolitan TAFE. The website aimed to showcase the client's services and products while providing an intuitive user experience.",
-      "Using Figma and Bootstrap 5, I designed and prototyped the website to ensure a cohesive and user-friendly interface. I then developed the website to be fully responsive, allowing users to access the site from various devices.",
-      "This project challenged me to think critically about the needs of the client and the end-users, while honing my design and development skills. I am proud to have delivered a high-quality front end for a website that meets the client's requirements and enhances their online presence."
-    ],
-    "imageId": 1,
-    "imageAlt": "Screenshot of George's Garden Center homepage.",
-    "siteLink": "https://00wyatt.github.io/georges-garden-center/",
-    "repoLink": "https://github.com/00Wyatt/georges-garden-center"
-  },
-  {
-    "id": 3,
-    "title": "Brick-by-Brick",
-    "blurb": "A prototype for a website designed for LEGO collectors to catalogue and share their collections with the world. Designed in Figma, and built with HTML, SCSS, and JavaScript.",
-    "description": [
-      "I played a key role in developing an online cataloguing application for a client's LEGO collection as part of my studies at North Metropolitan TAFE. The project required a solution to digitally track and display the client's collection online.",
-      "From the initial discussions with the client to the final implementation, I was heavily involved in all aspects of the project. I contributed to the planning and design phases and created a prototype of the website using HTML, SCSS, and JavaScript. I also utilized Figma to create the initial mock-ups.",
-      "I have gained valuable experience throughout this process in areas such as:"
-    ],
-    "bulletPoints": [
-      "Implementing a structured approach to development using agile techniques",
-      "Liaising with a client and maintaining frequent progress updates",
-      "Conceptualizing and developing ideas based on a client’s needs",
-      "Documenting and outlining an agreement of the scope of a project",
-      "Developing wireframes, mock-ups, and a prototype from an original design",
-      "Leading and facilitating a team"
-    ],
-    "imageId": 2,
-    "imageAlt": "Screenshot of Brick-by-Brick homepage.",
-    "siteLink": "https://00wyatt.github.io/brick-by-brick-prototype/",
-    "repoLink": "https://github.com/00Wyatt/brick-by-brick-prototype"
-  }
+	{
+		"id": 1,
+		"title": "Grad Show Project",
+		"blurb": "This project was developed at North Metropolitan TAFE. A website built with WordPress, SCSS, and JavaScript, showcasing the work of graduating students in Semester 1 of 2023.",
+		"description": [
+			"As a member of a collaborative team, I was involved in designing and developing a WordPress website to showcase the work of graduating students from North Metropolitan TAFE in Semester 1 of 2023. The Grad Show website aimed to provide a platform for students to showcase their work and connect with potential employers and industry professionals.",
+			"Using Figma, we designed a visually appealing and user-friendly interface that highlighted the students' diverse talents and skills. We also utilized WordPress to provide a flexible and scalable platform for managing and updating the website's content."
+		],
+		"imageId": 0,
+		"imageAlt": "Screenshot of Grad Show Project homepage.",
+		"siteLink": "https://2023.gradshow.screencraft.net.au/",
+		"repoLink": "https://github.com/00Wyatt/gradshow"
+	},
+	{
+		"id": 2,
+		"title": "Brick-by-Brick",
+		"blurb": "A prototype for a website designed for LEGO collectors to catalogue and share their collections with the world. Designed in Figma, and built with HTML, SCSS, and JavaScript.",
+		"description": [
+			"I played a key role in developing an online cataloguing application for a client's LEGO collection as part of my studies at North Metropolitan TAFE. The project required a solution to digitally track and display the client's collection online.",
+			"From the initial discussions with the client to the final implementation, I was heavily involved in all aspects of the project. I contributed to the planning and design phases and created a prototype of the website using HTML, SCSS, and JavaScript. I also utilized Figma to create the initial mock-ups.",
+			"I have gained valuable experience throughout this process in areas such as:"
+		],
+		"bulletPoints": [
+			"Implementing a structured approach to development using agile techniques",
+			"Liaising with a client and maintaining frequent progress updates",
+			"Conceptualizing and developing ideas based on a client’s needs",
+			"Documenting and outlining an agreement of the scope of a project",
+			"Developing wireframes, mock-ups, and a prototype from an original design",
+			"Leading and facilitating a team"
+		],
+		"imageId": 1,
+		"imageAlt": "Screenshot of Brick-by-Brick homepage.",
+		"siteLink": "https://00wyatt.github.io/brick-by-brick-prototype/",
+		"repoLink": "https://github.com/00Wyatt/brick-by-brick-prototype"
+	},
+	{
+		"id": 3,
+		"title": "Pokédex",
+		"blurb": "A responsive Pokédex app built with React, styled using TailwindCSS, and bundled with Vite. The app fetches data from the Pokémon API.",
+		"description": [
+			"This project showcases modern front-end development practices and API integration, using React for dynamic UI updates and TailwindCSS for efficient styling. Also included is theme toggling from light to dark, and data caching using local storage to minimise API requests.",
+			"The user can browse the list of Pokémon or search for one by name or Pokédex number. The page displays information about the selected Pokémon including their weight, height, abilities, stats, and a full list of the moves they can learn."
+		],
+		"imageId": 2,
+		"imageAlt": "Screenshot of George's Garden Center homepage.",
+		"siteLink": "https://pokedex-ii.netlify.app/",
+		"repoLink": "https://github.com/00Wyatt/pokedex"
+	}
 ]

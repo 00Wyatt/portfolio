@@ -1,94 +1,96 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .other-projects {
-  position: relative;
+	position: relative;
 
-  .header {
-    .container {
-      min-height: 240px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+	.header {
+		.container {
+			min-height: 240px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-    h2 {
-      font-size: $h-md;
-      line-height: rem(40);
+		h2 {
+			font-size: $h-md;
+			line-height: rem(40);
 
-      @include breakpoint(small) {
-        line-height: rem(48);
-      }
-    }
-  }
+			@include breakpoint(small) {
+				line-height: rem(48);
+			}
+		}
+	}
 
-  .content {
-    display: grid;
+	.content {
+		display: grid;
 
-    @include breakpoint(large) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+		@include breakpoint(large) {
+			grid-template-columns: repeat(2, 1fr);
+			max-width: 1000px;
+			margin: 0 auto;
+		}
 
-    .wrapper {
-      min-height: 296px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
+		.wrapper {
+			min-height: 296px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
 
-      @include breakpoint(small) {
-        min-height: 360px;
-      }
-    }
-  }
+			@include breakpoint(small) {
+				min-height: 360px;
+			}
+		}
+	}
 
-  .project {
-    padding: 24px 32px;
-    display: grid;
-    gap: 24px;
-    justify-items: center;
-  }
+	.project {
+		padding: 24px 32px;
+		display: grid;
+		gap: 24px;
+		justify-items: center;
+	}
 
-  .image-wrapper {
-    max-width: 144px;
+	.image-wrapper {
+		max-width: 144px;
 
-    .image-overlay {
-      border-radius: 50%;
-    }
-  }
+		.image-overlay {
+			border-radius: 50%;
+		}
+	}
 
-  .text {
-    max-width: 216px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    text-align: center;
-    line-height: rem(24);
+	.text {
+		max-width: 216px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4px;
+		text-align: center;
+		line-height: rem(24);
 
-    @include breakpoint(small) {
-      line-height: rem(32);
-    }
+		@include breakpoint(small) {
+			line-height: rem(32);
+		}
 
-    h3 {
-      font-size: $h-xs;
-    }
+		h3 {
+			font-size: $h-xs;
+		}
 
-    p {
-      font-size: $p-md;
-    }
-  }
+		p {
+			font-size: $p-md;
+		}
+	}
 
-  .icon-links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+	.icon-links {
+		display: flex;
+		align-items: center;
+		gap: 16px;
 
-    @include breakpoint(large) {
-      gap: 8px;
-    }
+		@include breakpoint(large) {
+			gap: 8px;
+		}
 
-    a > * {
-      transition: all 200ms ease-in-out;
-    }
-  }
+		a > * {
+			transition: all 200ms ease-in-out;
+		}
+	}
 }
