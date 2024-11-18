@@ -14,25 +14,17 @@
 	},
 	{
 		"id": 2,
-		"title": "Brick-by-Brick",
-		"blurb": "A prototype for a website designed for LEGO collectors to catalogue and share their collections with the world. Designed in Figma, and built with HTML, SCSS, and JavaScript.",
+		"title": "Coffee Tracker",
+		"blurb": "An app for tracking coffees and caffeine levels, built with React, TailwindCSS, and Vite. Authentication and user data storage with Firebase.",
 		"description": [
-			"I played a key role in developing an online cataloguing application for a client's LEGO collection as part of my studies at North Metropolitan TAFE. The project required a solution to digitally track and display the client's collection online.",
-			"From the initial discussions with the client to the final implementation, I was heavily involved in all aspects of the project. I contributed to the planning and design phases and created a prototype of the website using HTML, SCSS, and JavaScript. I also utilized Figma to create the initial mock-ups.",
-			"I have gained valuable experience throughout this process in areas such as:"
+			"A modern web app designed to help users monitor their coffee intake and caffeine levels throughout the day. Built with React and styled using TailwindCSS, the app offers a clean and user-friendly interface for logging coffee consumption. Users can record details such as the cost of each coffee and the time it was consumed, enabling detailed tracking of their caffeine habits.",
+			"Firebase powers the app's authentication system and securely stores user accounts and data, ensuring a personalized experience. Bundled with Vite for fast performance, the app delivers a responsive and efficient way to manage coffee consumption and make informed decisions about caffeine intake."
 		],
-		"bulletPoints": [
-			"Implementing a structured approach to development using agile techniques",
-			"Liaising with a client and maintaining frequent progress updates",
-			"Conceptualizing and developing ideas based on a client’s needs",
-			"Documenting and outlining an agreement of the scope of a project",
-			"Developing wireframes, mock-ups, and a prototype from an original design",
-			"Leading and facilitating a team"
-		],
+
 		"imageId": 1,
 		"imageAlt": "Screenshot of Brick-by-Brick homepage.",
-		"siteLink": "https://00wyatt.github.io/brick-by-brick-prototype/",
-		"repoLink": "https://github.com/00Wyatt/brick-by-brick-prototype"
+		"siteLink": "https://coffee-tracker-app.netlify.app/",
+		"repoLink": "https://github.com/00Wyatt/coffee-tracker"
 	},
 	{
 		"id": 3,
@@ -43,7 +35,7 @@
 			"The user can browse the list of Pokémon or search for one by name or Pokédex number. The page displays information about the selected Pokémon including their weight, height, abilities, stats, and a full list of the moves they can learn."
 		],
 		"imageId": 2,
-		"imageAlt": "Screenshot of George's Garden Center homepage.",
+		"imageAlt": "Screenshot of the Pokédex' homepage.",
 		"siteLink": "https://pokedex-ii.netlify.app/",
 		"repoLink": "https://github.com/00Wyatt/pokedex"
 	}

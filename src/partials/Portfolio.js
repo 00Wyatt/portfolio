@@ -6,7 +6,7 @@ import variants from "../components/FramerVariants";
 import Shapes from "../components/Shapes";
 import gradShow from "../assets/images/grad-show.png";
 import pokedex from "../assets/images/pokedex.png";
-import brickByBrick from "../assets/images/brick-by-brick.png";
+import coffeeTracker from "../assets/images/coffee-tracker.png";
 
 const shapesList = [
 	"block1",
@@ -23,7 +23,7 @@ const shapesList = [
 	"semicircle3",
 	"semicircle4",
 ];
-const images = [gradShow, brickByBrick, pokedex];
+const images = [gradShow, coffeeTracker, pokedex];
 
 export default function Portfolio() {
 	const [modalOpen, setModalOpen] = useState(false);
@@ -38,7 +38,7 @@ export default function Portfolio() {
 		<section id="portfolio" className="portfolio">
 			<Shapes shapesList={shapesList} />
 			{projects &&
-				projects.map((project) => (
+				projects.map(project => (
 					<div className="project" key={project.id}>
 						<div className="container">
 							<motion.div
@@ -48,8 +48,7 @@ export default function Portfolio() {
 								variants={variants.contentFadeIn}
 								initial="hidden"
 								whileInView="visible"
-								viewport={{ once: true, margin: "-100px" }}
-							>
+								viewport={{ once: true, margin: "-100px" }}>
 								<div className="text-cta">
 									<div className="text">
 										<h2>{project.title}</h2>
@@ -57,8 +56,7 @@ export default function Portfolio() {
 									</div>
 									<button
 										className="btn"
-										onClick={() => handleClick(project)}
-									>
+										onClick={() => handleClick(project)}>
 										Learn More
 									</button>
 								</div>
@@ -68,12 +66,10 @@ export default function Portfolio() {
 								variants={variants.contentFadeIn}
 								initial="hidden"
 								whileInView="visible"
-								viewport={{ once: true, margin: "-100px" }}
-							>
+								viewport={{ once: true, margin: "-100px" }}>
 								<div
 									className="image-wrapper"
-									onClick={() => handleClick(project)}
-								>
+									onClick={() => handleClick(project)}>
 									<img
 										src={images[project.imageId]}
 										alt={project.imageAlt}
@@ -87,8 +83,7 @@ export default function Portfolio() {
 			<AnimatePresence
 				initial={false}
 				mode="wait"
-				onExitComplete={() => null}
-			>
+				onExitComplete={() => null}>
 				{modalOpen && (
 					<Modal
 						modalOpen={modalOpen}
