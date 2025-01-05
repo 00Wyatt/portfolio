@@ -1,15 +1,24 @@
 [
 	{
 		"id": 1,
+		"title": "Pokédex",
+		"description": "A Pokédex app built with React, TailwindCSS, Vite, and the Pokémon API.",
+		"siteLink": "https://pokedex-ii.netlify.app/",
+		"repoLink": "https://github.com/00Wyatt/pokedex",
+		"imageId": 0,
+		"imageAlt": "A pokéball which has this site's brand colours."
+	},
+	{
+		"id": 2,
 		"title": "To-do List",
 		"description": "A to-do list app created with Meteor, React, and TailwindCSS.",
 		"siteLink": "https://to-dolist.meteorapp.com/",
 		"repoLink": "https://github.com/00Wyatt/todos-app",
-		"imageId": 0,
+		"imageId": 1,
 		"imageAlt": "Screenshot of To-do List main page."
 	},
 	{
-		"id": 2,
+		"id": 3,
 		"title": "Frontend Mentor",
 		"description": "Challenges for practice in creating webpages from pre-made designs.",
 		"siteLink": "https://www.frontendmentor.io/profile/00Wyatt",

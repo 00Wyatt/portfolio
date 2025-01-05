@@ -8,7 +8,9 @@ import { ReactComponent as UpArrow } from "../assets/SVGs/arrow-up-circle.svg";
 import { ReactComponent as DownArrow } from "../assets/SVGs/arrow-down-circle.svg";
 import { ReactComponent as HTML } from "../assets/SVGs/html.svg";
 import { ReactComponent as CSS } from "../assets/SVGs/css.svg";
+import { ReactComponent as TypeScript } from "../assets/SVGs/typescript.svg";
 import { ReactComponent as JavaScript } from "../assets/SVGs/javascript.svg";
+import { ReactComponent as MUI } from "../assets/SVGs/material-ui.svg";
 import { ReactComponent as React } from "../assets/SVGs/react.svg";
 import { ReactComponent as Sass } from "../assets/SVGs/sass.svg";
 import { ReactComponent as TailwindCSS } from "../assets/SVGs/tailwindcss.svg";
@@ -29,44 +31,45 @@ import { ReactComponent as List } from "../assets/SVGs/list.svg";
 import { ReactComponent as XLg } from "../assets/SVGs/x-lg.svg";
 import { ReactComponent as BoxArrow } from "../assets/SVGs/box-arrow.svg";
 
-
 const SVGs = {
-  Logo,
-  LogoW,
-  LogoC,
-  LinkedIn,
-  GitHub,
-  Instagram,
-  UpArrow,
-  DownArrow,
-  HTML,
-  CSS,
-  JavaScript,
-  React,
-  Sass,
-  TailwindCSS,
-  Bootstrap5,
-  WordPress,
-  PHP,
-  MySQL,
-  NodeJS,
-  MongoDB,
-  Python,
-  Git,
-  Figma,
-  Photoshop,
-  Block,
-  Triangle,
-  Semicircle,
-  List,
-  XLg,
-  BoxArrow
-}
+	Logo,
+	LogoW,
+	LogoC,
+	LinkedIn,
+	GitHub,
+	Instagram,
+	UpArrow,
+	DownArrow,
+	HTML,
+	CSS,
+	JavaScript,
+	TypeScript,
+	MUI,
+	React,
+	Sass,
+	TailwindCSS,
+	Bootstrap5,
+	WordPress,
+	PHP,
+	MySQL,
+	NodeJS,
+	MongoDB,
+	Python,
+	Git,
+	Figma,
+	Photoshop,
+	Block,
+	Triangle,
+	Semicircle,
+	List,
+	XLg,
+	BoxArrow,
+};
 
 export default function SVG(props) {
-  const SVGType = SVGs[props.type]
-  if (props.width || props.height) {
-    return <SVGType width={props.width} height={props.height} />
-  }
-  return <SVGType />
+	const SVGType = SVGs[props.type];
+	if (props.width || props.height) {
+		return <SVGType width={props.width} height={props.height} />;
+	}
+	return <SVGType />;
 }

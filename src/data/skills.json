@@ -1,53 +1,54 @@
 [
-  {
-    "name": "React"
-  },
-  {
-    "name": "JavaScript"
-  },
-  {
-    "name": "HTML"
-  },
-  {
-    "name": "CSS"
-  },
-  {
-    "name": "SCSS",
-    "logo": "Sass"
-  },
-  {
-    "name": "TailwindCSS"
-  },
-  {
-    "name": "Bootstrap5"
-  },
-  {
-    "name": "WordPress"
-  },
-  {
-    "name": "PHP"
-  },
-  {
-    "name": "MySQL"
-  },
-  {
-    "name": "Node.js",
-    "logo": "NodeJS"
-  },
-  {
-    "name": "MongoDB"
-  },
-  {
-    "name": "Python"
-  },
-  {
-    "name": "Git/GitHub",
-    "logo": "Git"
-  },
-  {
-    "name": "Figma"
-  },
-  {
-    "name": "Photoshop"
-  }
+	{
+		"name": "React"
+	},
+	{
+		"name": "TypeScript"
+	},
+	{
+		"name": "JavaScript"
+	},
+	{
+		"name": "Material UI",
+		"logo": "MUI"
+	},
+	{
+		"name": "HTML"
+	},
+	{
+		"name": "CSS"
+	},
+	{
+		"name": "TailwindCSS"
+	},
+	{
+		"name": "SCSS",
+		"logo": "Sass"
+	},
+	{
+		"name": "Python"
+	},
+	{
+		"name": "PHP"
+	},
+	{
+		"name": "WordPress"
+	},
+	{
+		"name": "MySQL"
+	},
+	{
+		"name": "Node.js",
+		"logo": "NodeJS"
+	},
+	{
+		"name": "MongoDB"
+	},
+	{
+		"name": "Git/GitHub",
+		"logo": "Git"
+	},
+	{
+		"name": "Figma"
+	}
 ]

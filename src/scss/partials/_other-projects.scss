@@ -25,9 +25,9 @@
 		display: grid;
 
 		@include breakpoint(large) {
-			grid-template-columns: repeat(2, 1fr);
-			max-width: 1000px;
-			margin: 0 auto;
+			grid-template-columns: repeat(3, 1fr);
+			// max-width: 1000px;
+			// margin: 0 auto;
 		}
 
 		.wrapper {

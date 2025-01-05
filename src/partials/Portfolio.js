@@ -5,7 +5,7 @@ import projects from "../data/portfolio.json";
 import variants from "../components/FramerVariants";
 import Shapes from "../components/Shapes";
 import gradShow from "../assets/images/grad-show.png";
-import pokedex from "../assets/images/pokedex.png";
+import dashboard from "../assets/images/dashboard.png";
 import coffeeTracker from "../assets/images/coffee-tracker.png";
 
 const shapesList = [
@@ -23,7 +23,7 @@ const shapesList = [
 	"semicircle3",
 	"semicircle4",
 ];
-const images = [gradShow, coffeeTracker, pokedex];
+const images = [dashboard, coffeeTracker, gradShow];
 
 export default function Portfolio() {
 	const [modalOpen, setModalOpen] = useState(false);

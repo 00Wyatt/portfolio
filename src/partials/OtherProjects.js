@@ -14,7 +14,7 @@ const shapesList = [
 	"semicircle1",
 	"semicircle2",
 ];
-const images = [toDoList, pokeball, frontendMentor];
+const images = [pokeball, toDoList, frontendMentor];
 
 export default function OtherProjects() {
 	return (
@@ -23,8 +23,7 @@ export default function OtherProjects() {
 			variants={variants.contentFadeIn}
 			initial="hidden"
 			whileInView="visible"
-			viewport={{ once: true, margin: "-100px" }}
-		>
+			viewport={{ once: true, margin: "-100px" }}>
 			<Shapes shapesList={shapesList} />
 			<div className="header">
 				<div className="container">
@@ -33,15 +32,14 @@ export default function OtherProjects() {
 			</div>
 			<div className="content">
 				{projects &&
-					projects.map((project) => (
+					projects.map(project => (
 						<div className="wrapper" key={project.id}>
 							<div className="project">
 								<div className="image-wrapper">
 									<a
 										href={project.siteLink}
 										target="_blank"
-										rel="noopener noreferrer"
-									>
+										rel="noopener noreferrer">
 										<img
 											src={images[project.imageId]}
 											alt={project.imageAlt}
@@ -55,8 +53,7 @@ export default function OtherProjects() {
 											className="site-link"
 											href={project.siteLink}
 											target="_blank"
-											rel="noopener noreferrer"
-										>
+											rel="noopener noreferrer">
 											{project.title}
 										</a>
 									</h3>
@@ -68,8 +65,7 @@ export default function OtherProjects() {
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label="View Site"
-											title="View Site"
-										>
+											title="View Site">
 											<SVG type="BoxArrow" />
 										</a>
 										<a
@@ -78,8 +74,7 @@ export default function OtherProjects() {
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label="GitHub"
-											title="GitHub"
-										>
+											title="GitHub">
 											<SVG type="GitHub" />
 										</a>
 									</div>
