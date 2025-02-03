@@ -5,7 +5,8 @@
 		"blurb": "A modern and responsive dashboard built with React, TypeScript, Material UI, and Vite, displaying key metrics and insights in a user-friendly layout.",
 		"description": [
 			"This dashboard is a responsive web application designed to showcase key metrics and insights in a clean and modern interface. Built with React, TypeScript, and Material UI, it highlights my ability to create intuitive, visually appealing, and functional user experiences.",
-			"The current version features an overview page with general stats, and additional pages will be added in the future to expand its functionality. This project demonstrates my skills in front end development, component-based design, and creating responsive layouts optimised for both desktop and mobile devices."
+			"The current version features an overview page with general stats, and additional pages will be added in the future to expand its functionality. This project demonstrates my skills in front end development, component-based design, and creating responsive layouts optimised for both desktop and mobile devices.",
+			"Read more about the process on my GitHub."
 		],
 		"imageId": 0,
 		"imageAlt": "Screenshot of the dashboard's main page.",
